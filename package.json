@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@ms-mwf/moray": "^1.9.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
