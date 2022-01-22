@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ms-mwf/moray": "^1.9.2"
+  }
+}

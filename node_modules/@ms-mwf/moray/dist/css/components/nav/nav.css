@@ -1,0 +1,96 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.nav-container {
+  overflow-x: hidden;
+  padding: 4px; }
+  .nav-container .nav {
+    margin-left: -1rem;
+    margin-right: -1rem; }
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none; }
+  .nav .nav-item {
+    margin: 0 1rem; }
+
+.nav-link,
+.nav-item {
+  position: relative; }
+  .nav-link::before,
+  .nav-item::before {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    padding: 0 0;
+    background-color: #0067b8;
+    background-clip: content-box; }
+
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #0067b8;
+  font-weight: 600;
+  text-decoration: none; }
+  .nav-link:hover::before {
+    display: block; }
+  .nav-link.disabled {
+    color: #757575;
+    pointer-events: none;
+    cursor: default; }
+  .nav-link.active {
+    color: #000; }
+    .nav-link.active::before {
+      display: none; }
+  html:not([dir="rtl"]) .nav-link.dropdown-toggle {
+    padding-right: 1.3125em; }
+  html[dir="rtl"] .nav-link.dropdown-toggle {
+    padding-left: 1.3125em; }
+  .nav-link.dropdown-toggle::before {
+    width: calc(100% - 1.3125em); }
+  html:not([dir="rtl"]) .nav-link.dropdown-toggle::after {
+    right: 0; }
+  html[dir="rtl"] .nav-link.dropdown-toggle::after {
+    left: 0; }
+  .nav-link .glyph-prepend {
+    display: flex;
+    align-items: center; }
+    html:not([dir="rtl"]) .nav-link .glyph-prepend::before {
+      padding-right: 0.375em; }
+    html[dir="rtl"] .nav-link .glyph-prepend::before {
+      padding-left: 0.375em; }
+
+.nav-item.active {
+  color: #000; }
+  .nav-item.active .nav-link {
+    color: #000; }
+  .nav-item.active::before {
+    display: block; }
+
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center; }
+
+.nav-justified .nav-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center; }
+
+.nav-fill,
+.nav-justified {
+  margin: 0; }
+  .nav-fill .nav-item,
+  .nav-justified .nav-item {
+    margin: 0; }
+  .nav-fill .nav-link,
+  .nav-justified .nav-link {
+    width: 100%; }

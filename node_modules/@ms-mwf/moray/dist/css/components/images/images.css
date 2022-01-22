@@ -1,0 +1,57 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 0.0625rem solid #d2d2d2;
+  border-radius: 0.125rem;
+  max-width: 100%;
+  height: auto; }
+
+.img-flex-auto {
+  flex: 0 0 auto; }
+
+.img-object-cover {
+  width: 100%; }
+  @supports ((-o-object-fit: cover) or (object-fit: cover)) {
+    .img-object-cover {
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%; } }
+
+.figure {
+  display: inline-block; }
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1; }
+
+.figure-caption {
+  font-size: 90%;
+  color: #505050; }
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .img-object-contain-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .img-object-contain-wrapper > .img-object-contain {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto !important;
+      width: auto !important;
+      position: static !important;
+      vertical-align: middle;
+      flex-shrink: 0; } }
+
+@supports ((-o-object-fit: contain) or (object-fit: contain)) {
+  .img-object-contain {
+    -o-object-fit: contain;
+       object-fit: contain; } }

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.play-video-icon,
+.play-video-icon-sm {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.11), 0 0.1875rem 0.4375rem rgba(0, 0, 0, 0.13); }
+  .play-video-icon.bg-light,
+  .play-video-icon-sm.bg-light {
+    color: #505050; }
+  .play-video-icon.bg-gray-800,
+  .play-video-icon-sm.bg-gray-800 {
+    color: #fff; }
+  .play-video-icon::before,
+  .play-video-icon-sm::before {
+    content: "";
+    font-family: "MWF-MORAY-MDL2"; }
+
+@media (min-width: 540px) {
+  .play-video-icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    font-size: 4.5625rem; } }

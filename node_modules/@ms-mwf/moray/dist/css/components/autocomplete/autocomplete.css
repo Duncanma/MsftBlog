@@ -1,0 +1,36 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.result-list {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  border: 0.0625rem solid #e6e6e6;
+  display: none;
+  background-color: #fff;
+  color: #000; }
+  .theme-dark .result-list {
+    background-color: #000;
+    color: #fff; }
+  .result-list.active {
+    display: block; }
+  .result-list .result {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+  .result-list .result:hover,
+  .result-list li:focus {
+    background-color: #0067b8;
+    color: #fff; }
+    .theme-dark .result-list .result:hover, .theme-dark
+    .result-list li:focus {
+      background-color: #3aa0fa;
+      color: #000; }
+
+.search-results-container {
+  position: relative; }

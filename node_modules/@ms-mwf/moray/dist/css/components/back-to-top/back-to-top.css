@@ -1,0 +1,22 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.back-to-top {
+  /* stylelint-disable declaration-no-important */
+  transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1) !important;
+  pointer-events: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .back-to-top {
+      transition: none; } }
+  .back-to-top.sticky.stuck {
+    transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1) !important; }
+    @media (prefers-reduced-motion: reduce) {
+      .back-to-top.sticky.stuck {
+        transition: none; } }
+  @media screen and (max-width: 540px) {
+    .back-to-top.stuck {
+      position: static; } }
+  .back-to-top .btn {
+    pointer-events: auto; }
