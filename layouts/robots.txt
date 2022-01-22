@@ -1,0 +1,6 @@
+User-agent: *
+{{ if in .Site.BaseURL "stage"}}
+Disallow: /
+{{ else }}
+sitemap: {{ "sitemap.xml" | absURL }}
+{{ end }}
