@@ -1,0 +1,21 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+ul.full li,
+ol.full li {
+  margin-bottom: 1rem; }
+
+.list-unstyled {
+  padding: 0;
+  list-style: none; }
+
+.list-inline {
+  padding: 0;
+  list-style: none; }
+
+.list-inline-item {
+  display: inline-block; }
+  .list-inline-item:not(:last-child) {
+    margin-right: 1rem; }

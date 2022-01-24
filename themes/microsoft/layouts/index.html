@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="row">
+	<div class="col-md-9">
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "eq" "posts") }}
+		{{ range $paginator.Pages }}
+			{{ .Render "summary" }}
+		{{ end }}
+		{{ partial "pagination.html" . }}
+	</div>
+	<div class="d-none d-md-block col-md-3">		
+	{{ partial "sidebar.html" . }}
+	</div>
+</div>
+{{ end }}

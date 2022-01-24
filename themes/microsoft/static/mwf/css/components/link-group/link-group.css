@@ -1,0 +1,32 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.link-group {
+  min-height: 2.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem; }
+  .link-group a {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    html:not([dir="rtl"]) .link-group a {
+      margin-right: 1.5rem; }
+    html[dir="rtl"] .link-group a {
+      margin-left: 1.5rem; }
+    html:not([dir="rtl"]) .link-group a:last-of-type {
+      margin-right: 0; }
+    html[dir="rtl"] .link-group a:last-of-type {
+      margin-left: 0; }
+  .link-group a ~ a:not(.btn) {
+    margin-top: 0; }
+  .link-group .btn,
+  .link-group .action-trigger {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+  .link-group .btn ~ a:not(.btn) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }

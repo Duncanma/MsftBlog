@@ -1,0 +1,37 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.sticky {
+  transition: background 0.2s ease-out, shadow 0.2s ease-out; }
+  .sticky .sticky-show-stuck {
+    display: none; }
+  .sticky.get-height .sticky-show-stuck {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    left: -9999px;
+    width: 100%; }
+  .sticky.stuck {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1020;
+    transition: position 300ms ease-in-out; }
+    .sticky.stuck .sticky-show-stuck {
+      display: block; }
+    .sticky.stuck .sticky-hide-stuck {
+      display: none; }
+    .sticky.stuck.sticky-direction-top.stuck-depth {
+      box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.45), 0 0.1875rem 0.4375rem rgba(0, 0, 0, 0.3); }
+    .sticky.stuck.sticky-direction-bottom.stuck-depth {
+      box-shadow: 0 -0.0625rem 0.125rem rgba(0, 0, 0, 0.45), 0 -0.1875rem 0.4375rem rgba(0, 0, 0, 0.3); }
+    .sticky.stuck .tab-group {
+      border-bottom: none; }
+      .sticky.stuck .tab-group a:active, .sticky.stuck .tab-group a:focus,
+      .sticky.stuck .tab-group button:active,
+      .sticky.stuck .tab-group button:focus {
+        margin-bottom: 0; }

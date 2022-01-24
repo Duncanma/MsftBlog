@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.color-picker {
+  padding: 0 7px 1.25em;
+  position: relative; }
+  .color-picker input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .color-picker input + label .color-picker-label {
+    display: none; }
+  .color-picker .color-picker-dot {
+    height: 2em;
+    width: 2em;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    margin-right: 0.83rem;
+    margin-bottom: 0.25rem;
+    transition: -webkit-transform 0.15s;
+    transition: transform 0.15s;
+    transition: transform 0.15s, -webkit-transform 0.15s;
+    will-change: transform;
+    position: relative;
+    cursor: pointer; }
+    .color-picker .color-picker-dot svg {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+  .color-picker input:checked + label .color-picker-dot,
+  .color-picker .color-picker-dot:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    border-color: transparent; }
+    .color-picker input:checked + label .color-picker-dot::before,
+    .color-picker .color-picker-dot:hover::before {
+      content: " ";
+      position: absolute;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 3px #fff;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+  .color-picker .color-picker-control:checked + label .color-picker-dot::after {
+    font-family: "MWF-MORAY-MDL2";
+    content: "";
+    color: #fff;
+    position: absolute;
+    line-height: 1;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.5em;
+    margin-top: -0.5em; }
+  .color-picker input:checked + label .color-picker-label {
+    position: absolute;
+    bottom: 0;
+    display: inline-block; }
+    html:not([dir="rtl"]) .color-picker input:checked + label .color-picker-label {
+      left: 0; }
+    html[dir="rtl"] .color-picker input:checked + label .color-picker-label {
+      right: 0; }
+  .color-picker input:focus + label .color-picker-dot {
+    outline: 0.125rem dotted currentColor;
+    outline-offset: 1px; }
+  .color-picker.color-picker--dark .color-picker-dot {
+    border: 2px solid #fff; }
+  .color-picker.color-picker--dark .color-picker-dot:hover {
+    border: 2px solid transparent; }
+  .color-picker.color-picker--dark .color-picker-dot:hover::before {
+    box-shadow: inset 0 0 0 3px #fff; }
+  .color-picker input:checked + .color-picker-dot-light .color-picker-dot::before,
+  .color-picker input + .color-picker-dot-light .color-picker-dot:hover::before {
+    box-shadow: inset 0 0 0 3px #000; }
+  .color-picker input:checked + .color-picker-dot-light .color-picker-dot::after {
+    color: #000; }

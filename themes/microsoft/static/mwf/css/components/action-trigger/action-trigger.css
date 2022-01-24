@@ -1,0 +1,53 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.action-trigger {
+  border: none;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  color: #0067b8;
+  text-decoration: underline;
+  outline-offset: 0.25rem;
+  cursor: pointer; }
+  .theme-dark .action-trigger {
+    color: #3aa0fa; }
+  .action-trigger:disabled, .action-trigger.disabled {
+    cursor: default;
+    opacity: 0.3; }
+  .action-trigger.inactive {
+    cursor: default;
+    text-decoration: none;
+    color: #757575; }
+  html:not([dir="rtl"]) .action-trigger.glyph-prepend {
+    padding-left: 1.25em; }
+  html[dir="rtl"] .action-trigger.glyph-prepend {
+    padding-right: 1.25em; }
+  html:not([dir="rtl"]) .action-trigger.glyph-append {
+    padding-right: 1.25em; }
+  html[dir="rtl"] .action-trigger.glyph-append {
+    padding-left: 1.25em; }
+  .action-trigger.glyph-prepend, .action-trigger.glyph-append {
+    text-decoration: none; }
+  .action-trigger::before, .action-trigger::after {
+    font-family: "MWF-MORAY-MDL2";
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5em; }
+  html:not([dir="rtl"]) .action-trigger::before {
+    left: 0; }
+  html[dir="rtl"] .action-trigger::before {
+    right: 0; }
+  html:not([dir="rtl"]) .action-trigger::after {
+    right: 0; }
+  html[dir="rtl"] .action-trigger::after {
+    left: 0; }
+
+a.action-trigger.disabled,
+fieldset:disabled a.action-trigger {
+  pointer-events: none; }

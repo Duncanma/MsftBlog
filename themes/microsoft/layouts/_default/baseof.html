@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ .Title }}</title>
+    <!-- MWF stylesheet (required) -->
+	<link rel="stylesheet" href="{{ "mwf/css/main.css" | relURL }}">
+
+    <!-- MWF polyfills (required) -->
+    <script src="{{ "mwf/js/polyfills.min.js" | relURL }}"></script>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+</head>
+<body>
+    <!--
+      If using Back to Top, a reference ID should be on an element at the top of the page within <body> before Universal Header.
+      `tabindex="-1" is only required if the element is not focusable by default.
+    -->
+    <div id="page-top" tabindex="-1"></div>
+
+    <!-- Universal Header HTML -->
+
+    <!--
+      Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible.
+      A div element can be used as long as it also contains a role="main" for Accessibility.
+      The ID of the main element should match the one set in UHF to generate the skip to main link.
+    -->
+    <main id="mainContent" class="container">
+		{{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- Universal Footer HTML -->
+
+    <!-- MWF JavaScript (required, include just before </body>) -->
+    <script src="{{ "mwf/js/bundle.min.js" | relURL }}"></script>
+</body>
+</html>

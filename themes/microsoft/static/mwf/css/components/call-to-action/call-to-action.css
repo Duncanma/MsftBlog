@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.cta {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600; }
+  html:not([dir="rtl"]) .cta {
+    padding-right: 1.3125em; }
+  html[dir="rtl"] .cta {
+    padding-left: 1.3125em; }
+  .cta::after {
+    font-family: "MWF-MORAY-MDL2";
+    position: absolute;
+    line-height: 1;
+    top: 50%;
+    margin-top: -0.5em;
+    font-size: 0.8125em;
+    transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+    @media (prefers-reduced-motion: reduce) {
+      .cta::after {
+        transition: none; } }
+    html:not([dir="rtl"]) .cta::after {
+      content: "";
+      right: 0.25em; }
+    html[dir="rtl"] .cta::after {
+      content: "";
+      left: 0.25em; }
+  .cta:hover {
+    text-decoration: underline; }
+    html:not([dir="rtl"]) .cta:hover::after {
+      -webkit-transform: translate(0.25em, 0);
+              transform: translate(0.25em, 0); }
+    html[dir="rtl"] .cta:hover::after {
+      -webkit-transform: translate(-0.25em, 0);
+              transform: translate(-0.25em, 0); }

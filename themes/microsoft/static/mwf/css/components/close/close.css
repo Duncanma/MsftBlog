@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.close {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: inherit; }
+  .close::before {
+    content: "";
+    font-family: "MWF-MORAY-MDL2"; }
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer; }
+
+a.close.disabled {
+  pointer-events: none; }

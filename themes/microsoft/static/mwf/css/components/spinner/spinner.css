@@ -1,0 +1,155 @@
+/*!
+ * MWF (Moray) v1.9.2
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
+ */
+.spinner {
+  position: relative;
+  width: 2.375rem;
+  height: 2.375rem;
+  padding: 0.35625rem; }
+
+.spinner .spinner-dot {
+  position: absolute;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-animation: orbit 5.5s infinite;
+          animation: orbit 5.5s infinite;
+  width: 1.6625rem;
+  height: 1.6625rem; }
+
+.spinner .spinner-dot::after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 0.1875rem;
+  height: 0.1875rem;
+  border: #0067b8 0.09375rem solid;
+  background: #0067b8; }
+  .theme-dark .spinner .spinner-dot::after {
+    background: #3aa0fa; }
+
+.spinner .spinner-dot.spinner-dot-2 {
+  -webkit-animation-delay: 240ms;
+          animation-delay: 240ms; }
+
+.spinner .spinner-dot.spinner-dot-3 {
+  -webkit-animation-delay: 480ms;
+          animation-delay: 480ms; }
+
+.spinner .spinner-dot.spinner-dot-4 {
+  -webkit-animation-delay: 720ms;
+          animation-delay: 720ms; }
+
+.spinner .spinner-dot.spinner-dot-5 {
+  -webkit-animation-delay: 960ms;
+          animation-delay: 960ms; }
+
+.spinner.spinner-lg {
+  width: 5.625rem;
+  height: 5.625rem;
+  padding: 0.84375rem; }
+
+.spinner.spinner-lg .spinner-dot {
+  width: 3.99375rem;
+  height: 3.99375rem; }
+
+.spinner.spinner-lg .spinner-dot::after {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-width: 0.1875rem; }
+
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+  .spinner-dot,
+  .spinner-dot::after {
+    display: none; }
+  .spinner > .sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    clip: auto;
+    white-space: inherit; } }
+
+@-webkit-keyframes orbit {
+  0% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+  7% {
+    -webkit-transform: rotate(345deg);
+            transform: rotate(345deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  30% {
+    -webkit-transform: rotate(455deg);
+            transform: rotate(455deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  39% {
+    -webkit-transform: rotate(690deg);
+            transform: rotate(690deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  70% {
+    -webkit-transform: rotate(815deg);
+            transform: rotate(815deg);
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+  75% {
+    -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+  76% {
+    -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+    opacity: 0; } }
+
+@keyframes orbit {
+  0% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+  7% {
+    -webkit-transform: rotate(345deg);
+            transform: rotate(345deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  30% {
+    -webkit-transform: rotate(455deg);
+            transform: rotate(455deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  39% {
+    -webkit-transform: rotate(690deg);
+            transform: rotate(690deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  70% {
+    -webkit-transform: rotate(815deg);
+            transform: rotate(815deg);
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+  75% {
+    -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+  76% {
+    -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+    opacity: 0; } }
