@@ -5,7 +5,8 @@ published: 2021-02-18
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/02/18/microsoft-internal-solorigate-investigation-final-update/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

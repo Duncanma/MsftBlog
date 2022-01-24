@@ -5,9 +5,11 @@ published: 2020-11-09
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/11/09/20201110_sugv2/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - セキュリティ情報
 - セキュリティ更新プログラム ガイド
 hero: ./img/wp-content-uploads-2020-11-Picture1.png

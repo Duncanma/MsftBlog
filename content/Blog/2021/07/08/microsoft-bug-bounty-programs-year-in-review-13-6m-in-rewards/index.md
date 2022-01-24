@@ -5,11 +5,13 @@ published: 2021-07-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/07/08/microsoft-bug-bounty-programs-year-in-review-13-6m-in-rewards/
-author: simon.pope
+authors:
+- simon.pope
 categories:
+- MSRC
+tags:
 - Bug Bounty Programs
 - Community-based Defense
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2021-07-Screenshot-2021-07-07-155703-1024x653.png

@@ -5,9 +5,11 @@ published: 2019-09-03
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/09/03/bluehat-seattle-2019-call-for-papers-is-now-open/
-author: christa
+authors:
+- christa
 categories:
 - BlueHat
+tags:
 - BlueHat Security Briefings
 - Community-based Defense
 - Security Ecosystem

@@ -5,9 +5,11 @@ published: 2019-09-18
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/09/18/meet-the-bluehat-content-advisory-board/
-author: christa
+authors:
+- christa
 categories:
 - BlueHat
+tags:
 - BlueHat Security Briefings
 - Community-based Defense
 - Content Advisory Board

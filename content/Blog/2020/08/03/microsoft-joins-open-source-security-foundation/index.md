@@ -5,10 +5,12 @@ published: 2020-08-03
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/08/03/microsoft-joins-open-source-security-foundation/
-author: simon.pope
+authors:
+- simon.pope
 categories:
-- linux
 - MSRC
+tags:
+- linux
 - Open Source
 - OpenSSF
 - security

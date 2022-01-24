@@ -5,12 +5,14 @@ published: 2019-11-13
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/11/13/bluehat-seattle-videos-are-online/
-author: christa
+authors:
+- christa
 categories:
+- BlueHat
+tags:
 - AppSec
 - Azure AD
 - Binary analysis
-- BlueHat
 - BlueHat Security Briefings
 - Community-based Defense
 - DFIR

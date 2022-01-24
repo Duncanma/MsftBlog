@@ -5,12 +5,14 @@ published: 2019-04-02
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/04/02/microsoft-bounty-program-updates-faster-bounty-review-faster-payments-and-higher-rewards/
-author: msrc
+authors:
+- msrc
 categories:
+- MSRC
+tags:
 - #bugbounty
 - #MSFTCyberSec
 - #MSFTsecresponse
-- MSRC
 hero: ./img/wp-content-uploads-2019-04-MSRC-Graphic.png
 ---
 [![](./img/wp-content-uploads-2019-04-MSRC-Graphic.png)](./img/wp-content-uploads-2019-04-MSRC-Graphic.png)

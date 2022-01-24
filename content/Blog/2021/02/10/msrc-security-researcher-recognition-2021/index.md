@@ -5,11 +5,13 @@ published: 2021-02-10
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/02/10/msrc-security-researcher-recognition-2021/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2021-02-2021mvr-1-3.png

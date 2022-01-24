@@ -5,9 +5,11 @@ published: 2020-12-23
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/12/23/20201224_yearend/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - セキュリティ情報
 - フィッシング
 hero: ../../../defaultHero.jpg

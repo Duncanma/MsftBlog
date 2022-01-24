@@ -5,13 +5,15 @@ published: 2020-10-14
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/10/14/security-analysis-of-cheri-isa/
-author: simon.pope
+authors:
+- simon.pope
 categories:
+- Security Research & Defense
+tags:
 - Memory Corruption
 - Memory Safety
 - Secure Development
 - Security Research
-- Security Research &amp; Defense
 hero: ../../../defaultHero.jpg
 ---
 <!-- wp:paragraph -->

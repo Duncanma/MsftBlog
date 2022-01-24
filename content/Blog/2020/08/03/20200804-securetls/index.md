@@ -5,9 +5,11 @@ published: 2020-08-03
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/08/03/20200804-securetls/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - TLS
 - セキュリティ情報
 hero: ../../../defaultHero.jpg

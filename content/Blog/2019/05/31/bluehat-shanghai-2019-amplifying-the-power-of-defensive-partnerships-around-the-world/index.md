@@ -5,7 +5,8 @@ published: 2019-05-31
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/05/31/bluehat-shanghai-2019-amplifying-the-power-of-defensive-partnerships-around-the-world/
-author: sylvliu
+authors:
+- sylvliu
 categories:
 - MSRC
 hero: ./img/wp-content-uploads-2019-05-MSRC-BlueHat.jpg

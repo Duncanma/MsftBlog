@@ -5,9 +5,11 @@ published: 2021-07-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/07/08/20210709_guidancecve202134527/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - アドバイザリ
 - セキュリティ情報
 - セキュリティ更新

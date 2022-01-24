@@ -5,11 +5,13 @@ published: 2020-02-24
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/02/24/calling-for-security-research-in-azure-sphere/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
-- MSRC
 - security
 - security res
 hero: ../../../defaultHero.jpg

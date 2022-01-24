@@ -5,13 +5,15 @@ published: 2020-04-29
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/04/29/the-safety-boat-kubernetes-and-rust/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- Security Research & Defense
+tags:
 - Memory Safety
 - Rust
 - Safe Systems Programming Languages
 - Secure Development
-- Security Research &amp; Defense
 hero: ../../../defaultHero.jpg
 ---
 <!-- wp:paragraph -->

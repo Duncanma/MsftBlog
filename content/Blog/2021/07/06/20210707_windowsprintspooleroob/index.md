@@ -5,9 +5,11 @@ published: 2021-07-06
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/07/06/20210707_windowsprintspooleroob/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - アドバイザリ
 - セキュリティ情報
 - セキュリティ更新

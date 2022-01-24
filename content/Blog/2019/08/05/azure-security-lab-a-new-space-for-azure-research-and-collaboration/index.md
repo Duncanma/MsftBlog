@@ -5,14 +5,16 @@ published: 2019-08-05
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/08/05/azure-security-lab-a-new-space-for-azure-research-and-collaboration/
-author: christa
+authors:
+- christa
 categories:
+- MSRC
+tags:
 - Azure
 - Azure Security Lab
 - Bounty
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Security Research
 hero: ../../../defaultHero.jpg
 ---

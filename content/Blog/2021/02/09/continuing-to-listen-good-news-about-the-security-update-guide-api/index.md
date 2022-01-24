@@ -5,9 +5,11 @@ published: 2021-02-09
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/02/09/continuing-to-listen-good-news-about-the-security-update-guide-api/
-author: lisa.olson
+authors:
+- lisa.olson
 categories:
 - MSRC
+tags:
 - Security Update Guide
 hero: ./img/wp-content-uploads-2021-02-Role-1024x809.png
 ---

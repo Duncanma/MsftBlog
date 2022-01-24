@@ -5,11 +5,13 @@ published: 2019-10-17
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/17/msrc-q3-2019-leaderboard/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2019-10-Q32019-541x1024.png

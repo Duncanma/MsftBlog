@@ -5,13 +5,15 @@ published: 2019-07-16
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/16/a-proactive-approach-to-more-secure-code/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- Security Research & Defense
+tags:
 - Memory Safety
 - Rust
 - Safe Systems Programming Languages
 - Secure Development
-- Security Research &amp; Defense
 hero: ./img/wp-content-uploads-2019-07-graph-1024x398.png
 ---
 <!-- wp:paragraph -->

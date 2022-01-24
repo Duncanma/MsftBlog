@@ -5,14 +5,16 @@ published: 2019-08-30
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/08/30/scalable-infrastructure-for-investigations-and-incident-response/
-author: christa
+authors:
+- christa
 categories:
+- Security Research & Defense
+tags:
 - Community-based Defense
 - forensics
 - incident response
 - investigations
 - PowerShell
-- Security Research &amp; Defense
 hero: ./img/wp-content-uploads-2019-07-Step2.a.png
 ---
 <!-- wp:paragraph -->

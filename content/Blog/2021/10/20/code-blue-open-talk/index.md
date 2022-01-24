@@ -5,9 +5,11 @@ published: 2021-10-20
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/10/20/code-blue-open-talk/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - セキュリティコミュニティ
 - バグバウンティ
 - 脆弱性報告窓口

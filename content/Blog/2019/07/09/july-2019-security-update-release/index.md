@@ -5,9 +5,11 @@ published: 2019-07-09
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/09/july-2019-security-update-release/
-author: christa
+authors:
+- christa
 categories:
 - MSRC
+tags:
 - Security Update
 - UpdateTuesday
 hero: ../../../defaultHero.jpg

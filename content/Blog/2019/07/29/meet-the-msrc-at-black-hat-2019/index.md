@@ -5,14 +5,16 @@ published: 2019-07-29
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/29/meet-the-msrc-at-black-hat-2019/
-author: christa
+authors:
+- christa
 categories:
+- MSRC
+tags:
 - Black Hat
 - Bug Bounty Programs
 - Community-based Defense
 - Microsoft Active Protections Program (MAPP)
 - Microsoft Threat Intelligence
-- MSRC
 - Security Researcher
 hero: ../../../defaultHero.jpg
 ---

@@ -5,11 +5,13 @@ published: 2019-10-25
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/25/time-for-day-2-of-briefings-at-bluehat-seattle/
-author: christa
+authors:
+- christa
 categories:
+- BlueHat
+tags:
 - Active Directory
 - Azure
-- BlueHat
 - BlueHat Security Briefings
 - Community-based Defense
 - DFIR

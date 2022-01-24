@@ -5,9 +5,11 @@ published: 2019-09-10
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/09/10/september-2019-security-updates/
-author: christa
+authors:
+- christa
 categories:
 - MSRC
+tags:
 - Security Update
 - Support Lifecycle
 hero: ../../../defaultHero.jpg

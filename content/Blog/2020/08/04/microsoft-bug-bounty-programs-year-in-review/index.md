@@ -5,12 +5,14 @@ published: 2020-08-04
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/08/04/microsoft-bug-bounty-programs-year-in-review/
-author: jarek
+authors:
+- jarek
 categories:
+- MSRC
+tags:
 - Black Hat
 - Bug Bounty Programs
 - Community-based Defense
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ../../../defaultHero.jpg

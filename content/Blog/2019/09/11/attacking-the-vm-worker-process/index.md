@@ -5,12 +5,14 @@ published: 2019-09-11
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/09/11/attacking-the-vm-worker-process/
-author: christa
+authors:
+- christa
 categories:
+- Security Research & Defense
+tags:
 - debugging
 - Hyper-V
 - Security Research
-- Security Research &amp; Defense
 hero: ./img/wp-content-uploads-2019-09-hv_arch-1024x655.png
 ---
 <!-- wp:paragraph -->

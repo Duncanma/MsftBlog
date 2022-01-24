@@ -5,11 +5,13 @@ published: 2020-07-24
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/07/24/updates-to-the-windows-insider-preview-bounty-program/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
-- MSRC
 - security
 - Security Research
 - Windows

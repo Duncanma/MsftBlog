@@ -5,11 +5,13 @@ published: 2021-10-14
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/10/14/congratulations-to-the-top-msrc-2021-q3-security-researchers/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2021-10-2021-Q3-Leaderboard-draft-1.png

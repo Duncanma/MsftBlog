@@ -5,9 +5,10 @@ published: 2019-01-28
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/01/28/fuzzing-para-virtualized-devices-in-hyper-v/
-author: swiat
+authors:
+- swiat
 categories:
-- Security Research &amp; Defense
+- Security Research & Defense
 hero: ./img/wp-content-uploads-2019-01-vmbus_arch_overview.png
 ---
 # Introduction

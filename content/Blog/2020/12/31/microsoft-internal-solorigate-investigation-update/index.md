@@ -5,10 +5,12 @@ published: 2020-12-31
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/12/31/microsoft-internal-solorigate-investigation-update/
-author: simon.pope
+authors:
+- simon.pope
 categories:
-- Investigation
 - MSRC
+tags:
+- Investigation
 - SolarWinds
 - Solorigate
 hero: ../../../defaultHero.jpg

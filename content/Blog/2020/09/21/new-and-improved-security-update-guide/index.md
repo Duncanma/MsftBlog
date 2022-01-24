@@ -5,9 +5,11 @@ published: 2020-09-21
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/09/21/new-and-improved-security-update-guide/
-author: msrc
+authors:
+- msrc
 categories:
 - MSRC
+tags:
 - Security Update
 - Security Update Guide
 - Update Tuesday

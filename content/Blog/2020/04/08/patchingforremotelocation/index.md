@@ -5,9 +5,11 @@ published: 2020-04-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/04/08/patchingforremotelocation/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - セキュリティ更新
 - セキュリティ更新プログラム
 - リモートワーク

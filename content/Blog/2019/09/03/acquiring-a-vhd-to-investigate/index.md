@@ -5,14 +5,16 @@ published: 2019-09-03
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/09/03/acquiring-a-vhd-to-investigate/
-author: christa
+authors:
+- christa
 categories:
+- Security Research & Defense
+tags:
 - Community-based Defense
 - forensics
 - incident response
 - investigations
 - PowerShell
-- Security Research &amp; Defense
 hero: ./img/wp-content-uploads-2019-07-Drawing-1.png
 ---
 <!-- wp:paragraph -->

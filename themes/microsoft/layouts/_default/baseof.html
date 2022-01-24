@@ -10,6 +10,10 @@
 
     <!-- MWF polyfills (required) -->
     <script src="{{ "mwf/js/polyfills.min.js" | relURL }}"></script>
+
+	{{ partial "uhf_css.html" . }}
+	{{ partial "uhf_javascript.html" . }}
+
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
@@ -25,6 +29,7 @@
     <div id="page-top" tabindex="-1"></div>
 
     <!-- Universal Header HTML -->
+	{{ partial "uhf_header.html" . }}
 
     <!--
       Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible.
@@ -36,6 +41,7 @@
     </main>
 
     <!-- Universal Footer HTML -->
+	{{ partial "uhf_footer.html" . }}
 
     <!-- MWF JavaScript (required, include just before </body>) -->
     <script src="{{ "mwf/js/bundle.min.js" | relURL }}"></script>

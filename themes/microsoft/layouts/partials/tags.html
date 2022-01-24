@@ -1,0 +1,5 @@
+<div class="tags">
+    {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+	<a class="btn btn-link btn-sm p-1" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}&nbsp;({{ .Count }}) </a> 
+    {{ end }}
+</div>

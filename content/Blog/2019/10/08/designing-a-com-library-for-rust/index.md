@@ -5,14 +5,16 @@ published: 2019-10-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/08/designing-a-com-library-for-rust/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- Security Research & Defense
+tags:
 - Memory Safety
 - Open Source
 - Rust
 - Safe Systems Programming Languages
 - Secure Development
-- Security Research &amp; Defense
 hero: ./img/wp-content-uploads-2019-09-pic1-1024x206.png
 ---
 <!-- wp:paragraph -->

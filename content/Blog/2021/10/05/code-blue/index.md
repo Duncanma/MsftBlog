@@ -5,7 +5,8 @@ published: 2021-10-05
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/10/05/code-blue/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
 hero: ../../../defaultHero.jpg

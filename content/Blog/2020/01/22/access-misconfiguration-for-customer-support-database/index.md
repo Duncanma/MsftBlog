@@ -5,10 +5,12 @@ published: 2020-01-22
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/01/22/access-misconfiguration-for-customer-support-database/
-author: simon.pope
+authors:
+- simon.pope
 categories:
-- Misconfiguration
 - MSRC
+tags:
+- Misconfiguration
 - Privacy
 hero: ../../../defaultHero.jpg
 ---

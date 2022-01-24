@@ -5,9 +5,11 @@ published: 2020-07-06
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/07/06/20200707suvp/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - SUVP
 - セキュリティ更新プログラム
 hero: ../../../defaultHero.jpg

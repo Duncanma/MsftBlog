@@ -5,7 +5,8 @@ published: 2019-11-12
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/11/12/november-2019-security-updates-are-available/
-author: christa
+authors:
+- christa
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

@@ -5,9 +5,11 @@ published: 2021-02-09
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/02/09/202102-security-updates/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - アドバイザリ
 - セキュリティ情報
 - セキュリティ更新

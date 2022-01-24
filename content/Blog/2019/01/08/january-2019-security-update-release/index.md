@@ -5,9 +5,11 @@ published: 2019-01-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/01/08/january-2019-security-update-release/
-author: msrc
+authors:
+- msrc
 categories:
 - MSRC
+tags:
 - Security Advisory
 - Security Update
 - Update Tuesday

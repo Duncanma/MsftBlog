@@ -5,9 +5,11 @@ published: 2019-09-16
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/09/16/calling-all-breakers-builders-bluehat-seattle-registration-is-open/
-author: christa
+authors:
+- christa
 categories:
 - BlueHat
+tags:
 - Cloud Security
 - Community-based Defense
 - DFIR

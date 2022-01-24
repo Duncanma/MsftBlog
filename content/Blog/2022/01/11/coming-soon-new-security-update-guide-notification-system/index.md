@@ -5,9 +5,11 @@ published: 2022-01-11
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2022/01/11/coming-soon-new-security-update-guide-notification-system/
-author: lisa.olson
+authors:
+- lisa.olson
 categories:
 - MSRC
+tags:
 - Security Update Guide
 - Technical Security Notifications
 hero: ./img/wp-content-uploads-2022-01-SUG_1-1024x517.png

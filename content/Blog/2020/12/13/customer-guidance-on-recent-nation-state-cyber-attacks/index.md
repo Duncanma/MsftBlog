@@ -5,7 +5,8 @@ published: 2020-12-13
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/
-author: msrc
+authors:
+- msrc
 categories:
 - MSRC
 hero: ./img/wp-content-uploads-2020-12-image-2.png

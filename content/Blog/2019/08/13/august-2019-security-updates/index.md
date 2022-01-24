@@ -5,9 +5,11 @@ published: 2019-08-13
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/08/13/august-2019-security-updates/
-author: christa
+authors:
+- christa
 categories:
 - MSRC
+tags:
 - Security Update
 - Support Lifecycle
 - Windows

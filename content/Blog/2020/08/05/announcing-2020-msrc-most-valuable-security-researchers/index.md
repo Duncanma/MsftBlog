@@ -5,11 +5,13 @@ published: 2020-08-05
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/08/05/announcing-2020-msrc-most-valuable-security-researchers/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Security Researcher
 hero: ./img/wp-content-uploads-2020-08-leaderboard-0806-533x1024.png
 ---

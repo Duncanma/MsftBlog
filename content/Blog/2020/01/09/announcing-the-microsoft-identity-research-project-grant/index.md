@@ -5,11 +5,13 @@ published: 2020-01-09
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/01/09/announcing-the-microsoft-identity-research-project-grant/
-author: chloe
+authors:
+- chloe
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Identity
-- MSRC
 - Research Grant
 - security
 - Security Research

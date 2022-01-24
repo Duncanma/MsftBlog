@@ -5,11 +5,13 @@ published: 2020-04-23
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/04/23/msrc-q1-2020-leaderboard/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2020-04-2020-Q1-Leaderboard-04_23-502x1024.png

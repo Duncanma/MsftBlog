@@ -5,11 +5,13 @@ published: 2021-01-11
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/01/11/building-faster-amd64-memset-routines/
-author: jobialek
+authors:
+- jobialek
 categories:
+- Security Research & Defense
+tags:
 - InitAll
 - memset
-- Security Research &amp; Defense
 - Uninitialized Memory
 hero: ./img/wp-content-uploads-2021-01-1-2-1024x870.png
 ---

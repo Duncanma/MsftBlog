@@ -5,10 +5,12 @@ published: 2021-04-13
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/04/13/april-2021-update-tuesday-packages-now-available/
-author: simon.pope
+authors:
+- simon.pope
 categories:
-- Microsoft Exchange
 - MSRC
+tags:
+- Microsoft Exchange
 hero: ../../../defaultHero.jpg
 ---
 <!-- wp:paragraph -->

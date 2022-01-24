@@ -5,10 +5,12 @@ published: 2020-08-26
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/08/26/20200827_laps/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- Active Directory
 - Japan Security Team
+tags:
+- Active Directory
 - LAPS
 - アドバイザリ
 - セキュリティ情報

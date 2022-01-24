@@ -5,9 +5,11 @@ published: 2021-02-11
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/02/11/20210212_tcpip/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - TCP/IP
 - セキュリティ情報
 - 脆弱性

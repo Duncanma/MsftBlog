@@ -5,9 +5,11 @@ published: 2021-11-21
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/11/21/securityupdatereleaseschedule2022/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - セキュリティ情報
 - セキュリティ情報 セキュリティ更新
 hero: ../../../defaultHero.jpg

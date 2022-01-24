@@ -5,7 +5,8 @@ published: 2019-06-11
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/06/11/june-2019-security-update-release/
-author: msrc
+authors:
+- msrc
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

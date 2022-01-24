@@ -5,12 +5,14 @@ published: 2019-08-05
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/08/05/corporate-iot-a-path-to-intrusion/
-author: christa
+authors:
+- christa
 categories:
+- Security Research & Defense
+tags:
 - Black Hat
 - IoT
 - MSTIC
-- Security Research &amp; Defense
 - STRONTIUM
 - Supply chain
 - Threat intelligence

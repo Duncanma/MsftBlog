@@ -5,13 +5,15 @@ published: 2019-10-18
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/18/introducing-the-electionguard-bounty-program/
-author: jarek
+authors:
+- jarek
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
 - Defending Democracy Program
 - ElectionGuard
-- MSRC
 - security
 - Security Research
 hero: ../../../defaultHero.jpg

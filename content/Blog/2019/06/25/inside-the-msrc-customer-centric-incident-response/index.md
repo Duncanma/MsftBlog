@@ -5,13 +5,15 @@ published: 2019-06-25
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/06/25/inside-the-msrc-customer-centric-incident-response/
-author: christa
+authors:
+- christa
 categories:
+- MSRC
+tags:
 - #CDOC
 - Community-based Defense
 - CVD
 - Microsoft Active Protections Program (MAPP)
-- MSRC
 - Security Development Lifecycle (SDL)
 - SSIRP
 hero: ./img/wp-content-uploads-2019-06-SSIRP-Strategy-and-Tactics.png

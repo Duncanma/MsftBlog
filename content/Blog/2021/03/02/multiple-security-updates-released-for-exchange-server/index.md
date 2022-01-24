@@ -5,7 +5,8 @@ published: 2021-03-02
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

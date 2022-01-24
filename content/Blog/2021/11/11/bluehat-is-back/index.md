@@ -5,7 +5,8 @@ published: 2021-11-11
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/11/11/bluehat-is-back/
-author: StephanieCalabrese
+authors:
+- StephanieCalabrese
 categories:
 - BlueHat
 - MSRC

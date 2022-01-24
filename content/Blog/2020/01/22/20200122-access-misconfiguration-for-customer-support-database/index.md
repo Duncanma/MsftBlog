@@ -5,7 +5,8 @@ published: 2020-01-22
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/01/22/20200122-access-misconfiguration-for-customer-support-database/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
 hero: ../../../defaultHero.jpg

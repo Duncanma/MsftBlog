@@ -5,7 +5,8 @@ published: 2021-03-16
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
 - MSRC
 hero: ./img/wp-content-uploads-2021-03-Fig1e-Microsoft-Defender-Security-Center-vulnerability-patching-status.png

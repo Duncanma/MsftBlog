@@ -5,7 +5,8 @@ published: 2019-09-23
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/09/23/msrc-is-going-to-rootcon/
-author: christa
+authors:
+- christa
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

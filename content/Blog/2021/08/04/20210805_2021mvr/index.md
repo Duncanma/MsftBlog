@@ -5,11 +5,13 @@ published: 2021-08-04
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/08/04/20210805_2021mvr/
-author: jsecteam
+authors:
+- jsecteam
 categories:
+- Japan Security Team
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- Japan Security Team
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2021-08-MVR-graphic-08-03-1.png

@@ -5,7 +5,8 @@ published: 2019-05-30
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/05/30/mapp-partner-recognition/
-author: msrc
+authors:
+- msrc
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

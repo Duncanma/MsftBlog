@@ -5,11 +5,13 @@ published: 2020-02-03
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/02/03/recognizing-security-researchers-in-2020/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2020-01-Picture5-1024x576.png

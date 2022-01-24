@@ -5,11 +5,13 @@ published: 2020-05-05
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/05/05/azure-sphere-security-research-challenge/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
-- MSRC
 - Security Research
 - Security Researcher
 hero: ../../../defaultHero.jpg

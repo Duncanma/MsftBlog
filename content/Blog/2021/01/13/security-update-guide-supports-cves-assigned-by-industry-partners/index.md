@@ -5,10 +5,12 @@ published: 2021-01-13
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/
-author: simon.pope
+authors:
+- simon.pope
 categories:
-- CVSS
 - MSRC
+tags:
+- CVSS
 - Security Update
 - Security Update Guide
 - Update Tuesday

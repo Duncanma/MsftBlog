@@ -5,10 +5,12 @@ published: 2020-12-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/12/08/security-update-guide-lets-keep-the-conversation-going/
-author: simon.pope
+authors:
+- simon.pope
 categories:
-- CVSS
 - MSRC
+tags:
+- CVSS
 - Security Update
 - Security Update Guide
 - Update Tuesday

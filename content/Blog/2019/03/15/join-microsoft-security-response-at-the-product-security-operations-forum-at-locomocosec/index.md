@@ -5,13 +5,15 @@ published: 2019-03-15
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/03/15/join-microsoft-security-response-at-the-product-security-operations-forum-at-locomocosec/
-author: msrc
+authors:
+- msrc
 categories:
+- MSRC
+tags:
 - #Cybersecur
 - #LocoMocoSec
 - #MSFTCyberSec
 - #MSFTsecresponse
-- MSRC
 hero: ../../../defaultHero.jpg
 ---
 The MSRC is more than managing vulnerability reports, publishing Microsoft security updates, and defending the cloud. The MSRC is passionate about helping everyone improve internal engineering practices and supporting the defender community, and are excited to partner with Blackberry to host a Product Security Operations Forum at [LocoMocoSec](https://locomocosec.com/) on April 18, 2019.

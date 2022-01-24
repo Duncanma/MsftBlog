@@ -5,10 +5,12 @@ published: 2021-02-09
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/02/09/multiple-security-updates-affecting-tcp-ip/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
-- Exploitability
 - MSRC
+tags:
+- Exploitability
 - network protocol
 - Risk Assessment
 - Update Tuesday

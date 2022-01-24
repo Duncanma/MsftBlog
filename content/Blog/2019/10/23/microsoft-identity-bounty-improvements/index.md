@@ -5,12 +5,14 @@ published: 2019-10-23
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/23/microsoft-identity-bounty-improvements/
-author: jarek
+authors:
+- jarek
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
 - Identity
-- MSRC
 - security
 - Security Research
 hero: ../../../defaultHero.jpg

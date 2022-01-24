@@ -5,11 +5,13 @@ published: 2021-07-15
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/07/15/announcing-the-top-msrc-2021-q2-security-researchers-congratulations/
-author: Lynn.Miyashita
+authors:
+- Lynn.Miyashita
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2021-07-2021-Q2-Leaderboard-draft-2.png

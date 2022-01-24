@@ -5,9 +5,11 @@ published: 2021-01-31
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/01/31/20210201_cybersecurityawareness/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - サイバーセキュリティ月間
 - セキュリティ情報
 hero: ../../../defaultHero.jpg

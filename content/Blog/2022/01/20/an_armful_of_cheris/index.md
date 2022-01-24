@@ -5,9 +5,10 @@ published: 2022-01-20
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2022/01/20/an_armful_of_cheris/
-author: Saar.Amar
+authors:
+- Saar.Amar
 categories:
-- Security Research &amp; Defense
+- Security Research & Defense
 hero: ./img/wp-content-uploads-2022-01-morello-1-1024x768.jpg
 ---
 <!-- wp:image {"id":13815,"sizeSlug":"large","linkDestination":"none"} -->

@@ -5,10 +5,12 @@ published: 2021-12-14
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/12/14/ad-hardenings/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- IT管理者向け
 - Japan Security Team
+tags:
+- IT管理者向け
 - ガイダンス
 - 脆弱性
 hero: ../../../defaultHero.jpg

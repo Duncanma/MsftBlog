@@ -5,10 +5,12 @@ published: 2019-11-25
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/11/25/rdpvulnerabilities/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- BlueKeep
 - Japan Security Team
+tags:
+- BlueKeep
 - RDP
 - セキュリティ情報
 - セキュリティ更新プログラム

@@ -5,7 +5,8 @@ published: 2019-02-14
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/02/14/bluehat-shanghai-cfp/
-author: sylvliu
+authors:
+- sylvliu
 categories:
 - BlueHat
 hero: ./img/wp-content-uploads-2019-02-BHlogo-1024x154.png

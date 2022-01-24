@@ -5,10 +5,12 @@ published: 2020-10-27
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/10/27/20201027_subdomaintakeover/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- Azure
 - Japan Security Team
+tags:
+- Azure
 - サブドメイン テイクオーバー
 - セキュリティ情報
 hero: ./img/wp-content-uploads-2020-10-20201027_Subdomaintakeover1.png

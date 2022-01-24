@@ -5,14 +5,16 @@ published: 2021-08-19
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/08/19/announcing-the-launch-of-the-azure-ssrf-security-research-challenge/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- MSRC
+tags:
 - Azure
 - Azure Security Lab
 - Bounty
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - security
 - Security Research
 hero: ../../../defaultHero.jpg

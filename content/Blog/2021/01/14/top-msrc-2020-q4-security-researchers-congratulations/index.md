@@ -5,11 +5,13 @@ published: 2021-01-14
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/01/14/top-msrc-2020-q4-security-researchers-congratulations/
-author: Lynn.Miyashita
+authors:
+- Lynn.Miyashita
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Security Researcher
 hero: ./img/wp-content-uploads-2021-01-2020-Q4-Leaderboard-draft-3.png
 ---

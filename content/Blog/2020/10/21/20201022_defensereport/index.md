@@ -5,10 +5,12 @@ published: 2020-10-21
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/10/21/20201022_defensereport/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- DigitalDefenseReport
 - Japan Security Team
+tags:
+- DigitalDefenseReport
 - SIR
 - セキュリティ情報
 - レポート

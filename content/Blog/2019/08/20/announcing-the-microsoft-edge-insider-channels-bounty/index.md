@@ -5,12 +5,14 @@ published: 2019-08-20
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/08/20/announcing-the-microsoft-edge-insider-channels-bounty/
-author: jarek
+authors:
+- jarek
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
 - Microsoft Edge
-- MSRC
 - MSRC
 - Security Research
 hero: ../../../defaultHero.jpg

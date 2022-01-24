@@ -5,7 +5,8 @@ published: 2021-12-14
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/12/14/researcher-spotlight-dr-nestori-syynimaas-constant-mission-protecting-identities/
-author: StephanieCalabrese
+authors:
+- StephanieCalabrese
 categories:
 - BlueHat
 - MSRC

@@ -5,9 +5,11 @@ published: 2019-10-24
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/24/welcome-to-the-second-stage-of-bluehat/
-author: christa
+authors:
+- christa
 categories:
 - BlueHat
+tags:
 - BlueHat Security Briefings
 - Community-based Defense
 - DevSecOps

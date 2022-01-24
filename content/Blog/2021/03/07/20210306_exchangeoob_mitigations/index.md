@@ -5,10 +5,12 @@ published: 2021-03-07
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/03/07/20210306_exchangeoob_mitigations/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- Exchange
 - Japan Security Team
+tags:
+- Exchange
 - セキュリティ情報
 - 脆弱性
 hero: ../../../defaultHero.jpg

@@ -5,13 +5,15 @@ published: 2020-08-17
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/08/17/control-flow-guard-for-clang-llvm-and-rust/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- Security Research & Defense
+tags:
 - Exploit Mitigations
 - Rust
 - Safe Systems Programming Languages
 - Secure Development
-- Security Research &amp; Defense
 hero: ../../../defaultHero.jpg
 ---
 <!-- wp:paragraph -->

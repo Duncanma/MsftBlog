@@ -5,11 +5,13 @@ published: 2021-04-29
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/04/29/badalloc-memory-allocation-vulnerabilities-could-affect-wide-range-of-iot-and-ot-devices-in-industrial-medical-and-enterprise-networks/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- MSRC
+tags:
 - BadAlloc
 - IoT
-- MSRC
 - OT
 - RTOS
 hero: ./img/wp-content-uploads-2021-04-Figure1-1.png

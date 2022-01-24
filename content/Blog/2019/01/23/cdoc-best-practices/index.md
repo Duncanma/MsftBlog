@@ -5,14 +5,16 @@ published: 2019-01-23
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/01/23/cdoc-best-practices/
-author: msrc
+authors:
+- msrc
 categories:
+- MSRC
+tags:
 - #CDOC
 - #cybersecurity
 - #MSCloud
 - #MSFTCyberSec
 - #MSIT
-- MSRC
 hero: ./img/wp-content-uploads-2019-01-sdf.jpg
 ---
 Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Each week seems to bring a new disclosure of a cybersecurity breach somewhere in the world. As we look at the current state of cybersecurity challenges today, we see the same types of attacks, but the sophistication and scope of each attack continues to grow and evolve. Add to these the threats of nation-state actors seeking to disrupt operations, conduct intelligence gathering, or generally undermine trust.

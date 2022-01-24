@@ -5,13 +5,15 @@ published: 2019-11-20
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/11/20/customer-guidance-for-the-dopplepaymer-ransomware/
-author: simon.pope
+authors:
+- simon.pope
 categories:
+- MSRC
+tags:
 - BlueKeep
 - Doppepaymer
 - malware
 - Microsoft Teams
-- MSRC
 - ransomware
 - RDP
 hero: ../../../defaultHero.jpg

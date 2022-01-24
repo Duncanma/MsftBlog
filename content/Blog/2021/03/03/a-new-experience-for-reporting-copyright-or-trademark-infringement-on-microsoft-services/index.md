@@ -5,13 +5,15 @@ published: 2021-03-03
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/03/03/a-new-experience-for-reporting-copyright-or-trademark-infringement-on-microsoft-services/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- MSRC
+tags:
 - Azure
 - infringement
 - Microsoft News
 - Microsoft Online Services
-- MSRC
 - NuGet
 - Office
 - Outlook

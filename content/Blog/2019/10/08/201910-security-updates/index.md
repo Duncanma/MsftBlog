@@ -5,9 +5,11 @@ published: 2019-10-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/08/201910-security-updates/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - アドバイザリ
 - セキュリティ情報
 - セキュリティ更新

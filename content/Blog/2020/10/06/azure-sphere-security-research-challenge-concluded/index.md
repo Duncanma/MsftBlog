@@ -5,11 +5,13 @@ published: 2020-10-06
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/10/06/azure-sphere-security-research-challenge-concluded/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
-- MSRC
 - Security Research
 - Security Researcher
 hero: ./img/wp-content-uploads-2020-10-SphereResult-1-1024x187.png

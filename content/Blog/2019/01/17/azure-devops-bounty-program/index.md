@@ -5,12 +5,14 @@ published: 2019-01-17
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/01/17/azure-devops-bounty-program/
-author: msrc
+authors:
+- msrc
 categories:
+- MSRC
+tags:
 - #AzureDevOps
 - #bugbounty
 - #MSFTCyberSec
-- MSRC
 hero: ./img/wp-content-uploads-2019-01-Image.png
 ---
 The Microsoft Security Response Center (MSRC) is pleased to announce the launch of the [Azure DevOps Bounty](http://www.microsoft.com/en-us/msrc/bounty-azure-devops) program, a program dedicated to providing rock-solid security for our DevOps customers. Starting January 17, 2019, we’re excited to offer rewards up to US\$20,000 for eligible vulnerabilities in Azure DevOps online services and the latest release of Azure DevOps server.

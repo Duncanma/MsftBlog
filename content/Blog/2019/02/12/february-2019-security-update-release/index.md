@@ -5,9 +5,11 @@ published: 2019-02-12
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/02/12/february-2019-security-update-release/
-author: msrc
+authors:
+- msrc
 categories:
 - MSRC
+tags:
 - Security Advisory
 - Security Update
 - Update Tuesday

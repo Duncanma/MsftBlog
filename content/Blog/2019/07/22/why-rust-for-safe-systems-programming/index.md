@@ -5,13 +5,15 @@ published: 2019-07-22
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- Security Research & Defense
+tags:
 - Memory Safety
 - Rust
 - Safe Systems Programming Languages
 - Secure Development
-- Security Research &amp; Defense
 hero: ../../../defaultHero.jpg
 ---
 <!-- wp:paragraph -->

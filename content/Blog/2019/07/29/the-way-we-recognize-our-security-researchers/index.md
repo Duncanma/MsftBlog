@@ -5,11 +5,13 @@ published: 2019-07-29
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/29/the-way-we-recognize-our-security-researchers/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Security Ecosystem
 - Security Researcher
 hero: ./img/wp-content-uploads-2019-07-insert-2.png

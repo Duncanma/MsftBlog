@@ -5,12 +5,14 @@ published: 2021-02-01
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/02/01/new-and-improved-report-abuse-portal-and-api/
-author: simon.pope
+authors:
+- simon.pope
 categories:
+- MSRC
+tags:
 - CARS
 - CERT
 - Microsoft Online Services
-- MSRC
 - Report Abuse
 - Report Abuse API
 - Report Abuse Portal

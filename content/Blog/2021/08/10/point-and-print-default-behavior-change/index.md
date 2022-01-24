@@ -5,7 +5,8 @@ published: 2021-08-10
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/08/10/point-and-print-default-behavior-change/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

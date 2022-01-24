@@ -5,7 +5,8 @@ published: 2021-12-22
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/12/22/azure-app-service-linux-source-repository-exposure/
-author: msrc
+authors:
+- msrc
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

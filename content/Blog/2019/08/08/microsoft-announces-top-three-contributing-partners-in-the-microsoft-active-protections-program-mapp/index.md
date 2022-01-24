@@ -5,13 +5,15 @@ published: 2019-08-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/08/08/microsoft-announces-top-three-contributing-partners-in-the-microsoft-active-protections-program-mapp/
-author: christa
+authors:
+- christa
 categories:
+- MSRC
+tags:
 - Black Hat
 - Community-based Defense
 - MAPP
 - Microsoft Active Protections Program (MAPP)
-- MSRC
 - Threat intelligemce
 hero: ./img/wp-content-uploads-2019-07-360.png
 ---

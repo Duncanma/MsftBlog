@@ -5,11 +5,13 @@ published: 2020-06-01
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/06/01/machine-learning-security-evasion-competition-2020-invites-researchers-to-defend-and-attack/
-author: jarek
+authors:
+- jarek
 categories:
+- MSRC
+tags:
 - artificial intelligence
 - Community-based Defense
-- MSRC
 - Security Research
 hero: ../../../defaultHero.jpg
 ---

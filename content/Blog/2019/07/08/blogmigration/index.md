@@ -5,9 +5,11 @@ published: 2019-07-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/08/blogmigration/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - お知らせ
 - セキュリティ情報
 hero: ./img/wp-content-uploads-2019-07-JapanSecurityTeam-300x272.png

@@ -5,9 +5,11 @@ published: 2020-10-13
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/10/13/202010-security-updates/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - アドバイザリ
 - セキュリティ情報
 - セキュリティ更新

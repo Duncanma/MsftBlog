@@ -5,11 +5,13 @@ published: 2020-01-30
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/01/30/announcing-the-xbox-bounty-program/
-author: chloe
+authors:
+- chloe
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
-- MSRC
 - security
 - Security Research
 - Xbox

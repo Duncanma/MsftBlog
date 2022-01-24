@@ -5,11 +5,13 @@ published: 2020-10-15
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/10/15/announcing-the-top-msrc-2020-q3-security-researchers/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2020-10-2020-Q3-Leaderboard-draft-2.png

@@ -5,7 +5,8 @@ published: 2021-06-25
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/06/25/new-nobelium-activity/
-author: simon.pope
+authors:
+- simon.pope
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

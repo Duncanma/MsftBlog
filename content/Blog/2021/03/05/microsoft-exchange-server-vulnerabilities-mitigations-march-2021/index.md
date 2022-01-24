@@ -5,13 +5,15 @@ published: 2021-03-05
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/03/05/microsoft-exchange-server-vulnerabilities-mitigations-march-2021/
-author: simon.pope
+authors:
+- simon.pope
 categories:
+- MSRC
+tags:
 - CVE-2021-26855
 - CVE-2021-26857
 - CVE-2021-26858
 - CVE-2021-27065
-- MSRC
 - partial mitigations
 hero: ../../../defaultHero.jpg
 ---

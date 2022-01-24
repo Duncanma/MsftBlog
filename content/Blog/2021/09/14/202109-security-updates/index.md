@@ -5,9 +5,11 @@ published: 2021-09-14
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/09/14/202109-security-updates/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - セキュリティ情報
 hero: ../../../defaultHero.jpg
 ---

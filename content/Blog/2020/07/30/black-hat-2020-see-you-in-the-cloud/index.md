@@ -5,12 +5,14 @@ published: 2020-07-30
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/07/30/black-hat-2020-see-you-in-the-cloud/
-author: christa
+authors:
+- christa
 categories:
+- MSRC
+tags:
 - Black Hat
 - Bug Bounty Programs
 - Community-based Defense
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ../../../defaultHero.jpg

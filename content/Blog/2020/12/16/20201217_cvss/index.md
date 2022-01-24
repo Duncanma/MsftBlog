@@ -5,10 +5,12 @@ published: 2020-12-16
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/12/16/20201217_cvss/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- CVSS
 - Japan Security Team
+tags:
+- CVSS
 - セキュリティ情報
 - セキュリティ更新プログラム ガイド
 hero: ./img/wp-content-uploads-2020-12-20201217_CVSS_1.png

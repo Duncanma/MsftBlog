@@ -5,9 +5,11 @@ published: 2020-04-20
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/04/20/remoteworksecuresettings/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - セキュリティ情報
 - リモートワーク
 hero: ./img/wp-content-uploads-2020-04-20200421_BasicWin10SecuritySettings.png

@@ -5,9 +5,11 @@ published: 2020-06-17
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/06/17/20200618-setr/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - SETR
 - セキュリティエンドポイント脅威レポート
 - セキュリティ情報

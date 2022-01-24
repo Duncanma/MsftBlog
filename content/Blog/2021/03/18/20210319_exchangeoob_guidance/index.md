@@ -5,10 +5,12 @@ published: 2021-03-18
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/03/18/20210319_exchangeoob_guidance/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- Exchange
 - Japan Security Team
+tags:
+- Exchange
 - セキュリティ情報
 - 脆弱性
 hero: ./img/wp-content-uploads-2021-03-Fig1e-Microsoft-Defender-Security-Center-vulnerability-patching-status.png

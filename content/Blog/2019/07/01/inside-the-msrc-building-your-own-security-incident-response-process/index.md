@@ -5,11 +5,13 @@ published: 2019-07-01
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/01/inside-the-msrc-building-your-own-security-incident-response-process/
-author: christa
+authors:
+- christa
 categories:
+- MSRC
+tags:
 - #CDOC
 - Defender
-- MSRC
 - Post incident review
 - SSIRP
 hero: ./img/wp-content-uploads-2019-07-SSIRP-best-practices-headers.jpg

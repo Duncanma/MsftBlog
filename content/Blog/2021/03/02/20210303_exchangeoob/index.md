@@ -5,10 +5,12 @@ published: 2021-03-02
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/03/02/20210303_exchangeoob/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- Exchange
 - Japan Security Team
+tags:
+- Exchange
 - セキュリティ更新プログラム
 - 定例外
 hero: ../../../defaultHero.jpg

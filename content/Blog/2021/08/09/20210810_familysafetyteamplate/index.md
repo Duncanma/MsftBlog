@@ -5,9 +5,11 @@ published: 2021-08-09
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/08/09/20210810_familysafetyteamplate/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - セキュリティ情報
 - ファミリーセーフティ
 hero: ../../../defaultHero.jpg

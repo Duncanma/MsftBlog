@@ -5,13 +5,15 @@ published: 2019-09-30
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/09/30/building-the-azure-iot-edge-security-daemon-in-rust/
-author: christa
+authors:
+- christa
 categories:
+- Security Research & Defense
+tags:
 - Azure
 - IoT
 - Rust
 - Safe Systems Programming Languages
-- Security Research &amp; Defense
 hero: ../../../defaultHero.jpg
 ---
 <!-- wp:paragraph -->

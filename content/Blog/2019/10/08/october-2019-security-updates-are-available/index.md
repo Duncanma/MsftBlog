@@ -5,9 +5,11 @@ published: 2019-10-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/08/october-2019-security-updates-are-available/
-author: christa
+authors:
+- christa
 categories:
 - MSRC
+tags:
 - Security Update
 hero: ../../../defaultHero.jpg
 ---

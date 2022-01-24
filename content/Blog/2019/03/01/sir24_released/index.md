@@ -5,9 +5,11 @@ published: 2019-03-01
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/03/01/sir24_released/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - SIR
 - セキュリティ
 - セキュリティ情報

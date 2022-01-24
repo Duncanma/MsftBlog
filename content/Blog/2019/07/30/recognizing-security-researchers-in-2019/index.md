@@ -5,11 +5,13 @@ published: 2019-07-30
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/30/recognizing-security-researchers-in-2019/
-author: sylvliu
+authors:
+- sylvliu
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Security Ecosystem
 - Security Researcher
 hero: ../../../defaultHero.jpg

@@ -5,9 +5,11 @@ published: 2022-01-11
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2022/01/11/202201-security-updates/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - アドバイザリ
 - セキュリティ情報
 - セキュリティ更新

@@ -5,10 +5,12 @@ published: 2021-06-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/06/08/20210609_dcomenrocement/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- DCOM
 - Japan Security Team
+tags:
+- DCOM
 - ガイダンス
 - 脆弱性
 hero: ./img/wp-content-uploads-2021-06-20210609_Blog_DCOMEnrocement_1.png

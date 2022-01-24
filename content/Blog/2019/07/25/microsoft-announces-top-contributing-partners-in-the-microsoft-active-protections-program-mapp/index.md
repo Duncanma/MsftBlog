@@ -5,12 +5,14 @@ published: 2019-07-25
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/25/microsoft-announces-top-contributing-partners-in-the-microsoft-active-protections-program-mapp/
-author: christa
+authors:
+- christa
 categories:
+- MSRC
+tags:
 - BlackHat
 - Community-based Defense
 - MAPP
-- MSRC
 - Security Ecosystem
 hero: ../../../defaultHero.jpg
 ---

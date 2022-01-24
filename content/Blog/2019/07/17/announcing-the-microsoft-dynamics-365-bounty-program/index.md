@@ -5,12 +5,14 @@ published: 2019-07-17
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/07/17/announcing-the-microsoft-dynamics-365-bounty-program/
-author: christa
+authors:
+- christa
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
 - Microsoft Dynamics
-- MSRC
 - Security Research
 hero: ../../../defaultHero.jpg
 ---

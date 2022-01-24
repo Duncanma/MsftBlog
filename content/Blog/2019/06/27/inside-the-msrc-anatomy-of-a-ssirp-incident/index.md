@@ -5,10 +5,12 @@ published: 2019-06-27
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/06/27/inside-the-msrc-anatomy-of-a-ssirp-incident/
-author: christa
+authors:
+- christa
 categories:
-- #CDOC
 - MSRC
+tags:
+- #CDOC
 - Post incident review
 - runc
 - SSIRP

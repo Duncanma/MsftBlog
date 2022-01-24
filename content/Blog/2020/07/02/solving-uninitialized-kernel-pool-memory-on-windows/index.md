@@ -5,10 +5,11 @@ published: 2020-07-02
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/07/02/solving-uninitialized-kernel-pool-memory-on-windows/
-author: jobialek
+authors:
+- jobialek
 categories:
 - MSRC
-- Security Research &amp; Defense
+- Security Research & Defense
 hero: ./img/wp-content-uploads-2020-07-image1.png
 ---
 <!-- wp:paragraph -->

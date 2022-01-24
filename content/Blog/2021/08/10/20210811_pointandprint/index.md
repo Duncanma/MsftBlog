@@ -5,10 +5,12 @@ published: 2021-08-10
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/08/10/20210811_pointandprint/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- CVE-2021-34481
 - Japan Security Team
+tags:
+- CVE-2021-34481
 - Point and Print
 - セキュリティ情報
 hero: ../../../defaultHero.jpg

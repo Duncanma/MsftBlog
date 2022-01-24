@@ -5,11 +5,13 @@ published: 2021-08-04
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/08/04/congratulations-to-the-msrc-2021-most-valuable-security-researchers/
-author: Lynn.Miyashita
+authors:
+- Lynn.Miyashita
 categories:
+- MSRC
+tags:
 - Community-based Defense
 - Coordinated Vulnerability Disclosure
-- MSRC
 - Researcher Recognition
 - Security Researcher
 hero: ./img/wp-content-uploads-2021-08-MVR-graphic-08-03-1.png

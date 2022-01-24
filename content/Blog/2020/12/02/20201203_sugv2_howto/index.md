@@ -5,9 +5,11 @@ published: 2020-12-02
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/12/02/20201203_sugv2_howto/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - SUG
 - セキュリティ情報
 - セキュリティ更新プログラム ガイド

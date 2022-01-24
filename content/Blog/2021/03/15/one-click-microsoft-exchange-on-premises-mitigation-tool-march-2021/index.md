@@ -5,13 +5,15 @@ published: 2021-03-15
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/03/15/one-click-microsoft-exchange-on-premises-mitigation-tool-march-2021/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- MSRC
+tags:
 - CVE-2021-26855
 - CVE-2021-26857
 - CVE-2021-26858
 - CVE-2021-27065
-- MSRC
 - partial mitigations
 hero: ./img/wp-content-uploads-2021-03-image-28-1024x523.png
 ---

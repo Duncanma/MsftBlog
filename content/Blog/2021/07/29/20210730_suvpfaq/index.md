@@ -5,9 +5,11 @@ published: 2021-07-29
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/07/29/20210730_suvpfaq/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - SUVP
 - セキュリティ更新プログラム
 hero: ../../../defaultHero.jpg

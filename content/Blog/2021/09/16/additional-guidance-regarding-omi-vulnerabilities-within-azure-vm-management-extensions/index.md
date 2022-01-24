@@ -5,7 +5,8 @@ published: 2021-09-16
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/09/16/additional-guidance-regarding-omi-vulnerabilities-within-azure-vm-management-extensions/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

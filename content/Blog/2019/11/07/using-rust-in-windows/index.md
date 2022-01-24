@@ -5,13 +5,15 @@ published: 2019-11-07
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/11/07/using-rust-in-windows/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- Security Research & Defense
+tags:
 - Memory Safety
 - Rust
 - Safe Systems Programming Languages
 - Secure Development
-- Security Research &amp; Defense
 hero: ../../../defaultHero.jpg
 ---
 <!-- wp:paragraph -->

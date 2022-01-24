@@ -5,9 +5,11 @@ published: 2019-01-08
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/01/09/201901-security-updates/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - アドバイザリ
 - セキュリティ情報
 - セキュリティ更新

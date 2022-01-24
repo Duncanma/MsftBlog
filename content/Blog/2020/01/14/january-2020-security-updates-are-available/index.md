@@ -5,7 +5,8 @@ published: 2020-01-14
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/01/14/january-2020-security-updates-are-available/
-author: christa
+authors:
+- christa
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

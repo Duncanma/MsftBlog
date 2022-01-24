@@ -5,12 +5,14 @@ published: 2019-10-02
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2019/10/02/ldapbinding/
-author: jsecteam
+authors:
+- jsecteam
 categories:
+- Japan Security Team
+tags:
 - Active Directory
 - ADV190023
 - advisory
-- Japan Security Team
 - LDAP
 - Security Advisory
 - アドバイザリ

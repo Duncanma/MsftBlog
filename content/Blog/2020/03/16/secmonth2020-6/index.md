@@ -5,9 +5,11 @@ published: 2020-03-16
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/03/16/secmonth2020-6/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - サイバーセキュリティ月間
 - セキュリティ情報
 hero: ./img/wp-content-uploads-2020-03-6_1SupportPhase.png

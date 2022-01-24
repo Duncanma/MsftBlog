@@ -5,11 +5,13 @@ published: 2021-07-19
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/07/19/introducing-bounty-awards-for-teams-mobile-applications-security-research/
-author: Lynn.Miyashita
+authors:
+- Lynn.Miyashita
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
-- MSRC
 - security
 - Security Research
 hero: ../../../defaultHero.jpg

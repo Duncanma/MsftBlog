@@ -5,12 +5,14 @@ published: 2020-05-13
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/05/13/solving-uninitialized-stack-memory-on-windows/
-author: jobialek
+authors:
+- jobialek
 categories:
+- Security Research & Defense
+tags:
 - Exploit Mitigations
 - InitAll
 - Mitigations
-- Security Research &amp; Defense
 - Uninitialized Memory
 hero: ./img/wp-content-uploads-2020-05-cves_by_year.png
 ---

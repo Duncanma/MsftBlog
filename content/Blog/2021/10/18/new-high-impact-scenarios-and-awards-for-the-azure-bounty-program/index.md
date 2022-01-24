@@ -5,12 +5,14 @@ published: 2021-10-18
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/10/18/new-high-impact-scenarios-and-awards-for-the-azure-bounty-program/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- MSRC
+tags:
 - Azure
 - Bounty
 - Community-based Defense
-- MSRC
 - security
 - Security Research
 hero: ../../../defaultHero.jpg

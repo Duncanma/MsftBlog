@@ -5,7 +5,8 @@ published: 2021-11-17
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/11/17/guidance-for-azure-active-directory-ad-keycredential-property-information-disclosure-in-application-and-service-principal-apis/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
 - MSRC
 hero: ../../../defaultHero.jpg

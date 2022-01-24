@@ -5,10 +5,12 @@ published: 2020-06-18
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/06/18/20200619-iecu/
-author: jsecteam
+authors:
+- jsecteam
 categories:
-- Internet Explorer
 - Japan Security Team
+tags:
+- Internet Explorer
 - セキュリティ更新プログラム
 - ロールアップ
 hero: ./img/wp-content-uploads-2020-06-20200619_IECU-1.png

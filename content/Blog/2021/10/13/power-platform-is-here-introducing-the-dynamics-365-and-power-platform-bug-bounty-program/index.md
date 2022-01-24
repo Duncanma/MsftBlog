@@ -5,11 +5,13 @@ published: 2021-10-13
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2021/10/13/power-platform-is-here-introducing-the-dynamics-365-and-power-platform-bug-bounty-program/
-author: Sebastian.Fernandez
+authors:
+- Sebastian.Fernandez
 categories:
+- MSRC
+tags:
 - Bounty
 - Community-based Defense
-- MSRC
 - security
 - Security Research
 hero: ../../../defaultHero.jpg

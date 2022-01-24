@@ -5,9 +5,11 @@ published: 2020-03-30
 type: posts
 redirect_from:
             - https://msrc-blog.microsoft.com/2020/03/30/secconjp/
-author: jsecteam
+authors:
+- jsecteam
 categories:
 - Japan Security Team
+tags:
 - SecCon
 - セキュリティ情報
 - セキュリティ構成フレームワーク
