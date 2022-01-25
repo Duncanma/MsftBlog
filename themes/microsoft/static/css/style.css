@@ -1,3 +1,15 @@
 div#meControl {
     display: none;
 }
+
+div#mainContent img {
+    max-width: 100%;
+}
+
+div.metadata ul li {
+    display: inline;
+}
+
+div.metadata ul {
+    display: inline;
+}

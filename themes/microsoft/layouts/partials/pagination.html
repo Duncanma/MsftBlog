@@ -1,9 +1,94 @@
-<div>
-{{ if .Paginator.HasPrev }}
-	<a href="{{ .Paginator.Prev.URL }}">Previous Page</a>
-{{ end }}
-{{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
-{{ if .Paginator.HasNext }}
-	<a href="{{ .Paginator.Next.URL }}">Next Page</a>
-{{ end }}
-</div>
+{{- $validFormats := slice "default" "terse" }}
+
+{{- $msg1 := "When passing a map to the internal pagination template, one of the elements must be named 'page', and it must be set to the context of the current page." }}
+{{- $msg2 := "The 'format' specified in the map passed to the internal pagination template is invalid. Valid choices are: %s." }}
+
+{{- $page := . }}
+{{- $format := "default" }}
+
+{{- if reflect.IsMap . }}
+  {{- with .page }}
+    {{- $page = . }}
+  {{- else }}
+    {{- errorf $msg1 }}
+  {{- end }}
+  {{- with .format }}
+    {{- $format = lower . }}
+  {{- end }}
+{{- end }}
+
+{{- if in $validFormats $format }}
+  {{- if gt $page.Paginator.TotalPages 1 }}
+  	<nav aria-label="Pagination for blog posts: {{ $page.Paginator.TotalPages }} pages">
+    	<ul class="pagination pagination-segment-end">
+      		{{- partial (printf "partials/inline/pagination/%s" $format) $page }}
+	    </ul>
+	</nav>
+
+  {{- end }}
+{{- else }}
+  {{- errorf $msg2 (delimit $validFormats ", ") }}
+{{- end -}}
+
+{{/* Format: default
+{{/* --------------------------------------------------------------------- */}}
+{{- define "partials/inline/pagination/default" }}
+  {{- with .Paginator }}
+    {{- $currentPageNumber := .PageNumber }}
+
+    {{- with .First }}
+      {{- if ne $currentPageNumber .PageNumber }}
+      <li class="page-item">
+        <a href="{{ .URL }}" aria-label="First" class="page-link" role="button"><span aria-hidden="true">1</span></a>
+      </li>
+      {{- else }}
+      <li class="page-item disabled active">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">1</span></a>
+      </li>
+      {{- end }}
+    {{- end }}
+
+    {{ if gt $currentPageNumber 4 }}
+	<li class="page-item disabled ellipsis">
+		<span class="page-link text-body">...</span>
+	</li>
+    {{- end }}
+
+    {{- $slots := 5 }}
+    {{- $start := math.Max 2 (sub .PageNumber (math.Floor (div $slots 2))) }}
+    {{- $end := math.Min (sub .TotalPages 1) (sub (add $start $slots) 1) }}
+    {{- if lt (add (sub $end $start) 1) $slots }}
+      {{- $start = math.Max 1 (add (sub $end $slots) 1) }}
+    {{- end }}
+
+    {{- range $k := seq $start $end }}
+      {{- if eq $.Paginator.PageNumber $k }}
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page {{ $k }}" class="page-link" role="button">{{ $k }}</a>
+      </li>
+      {{- else }}
+      <li class="page-item">
+        <a href="{{ (index $.Paginator.Pagers (sub $k 1)).URL }}" aria-label="Page {{ $k }}" class="page-link" role="button">{{ $k }}</a>
+      </li>
+      {{- end }}
+    {{- end }}
+	{{ if lt $currentPageNumber (sub .Last.PageNumber 3)}}
+	<li class="page-item disabled ellipsis">
+		<span class="page-link text-body">...</span>
+	</li>
+    {{- end }}
+
+    {{- with .Last }}
+      {{- if ne $currentPageNumber .PageNumber }}
+      <li class="page-item">
+        <a href="{{ .URL }}" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">{{ .PageNumber }} </span></a>
+      </li>
+      {{- else }}
+      <li class="page-item disabled active">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">{{ .PageNumber }}</span></a>
+      </li>
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end -}}
+
