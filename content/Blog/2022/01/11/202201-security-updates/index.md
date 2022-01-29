@@ -15,6 +15,7 @@ tags:
 - セキュリティ更新
 - セキュリティ更新プログラム
 hero: ../../../defaultHero.jpg
+lang: jp
 ---
 <!-- wp:paragraph -->
 

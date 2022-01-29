@@ -1,47 +1,17 @@
 {{ define "main" }}
 	<article>
-		<nav aria-label="Your location in the site">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="/">Home</a></li>
-				<li class="breadcrumb-item"><a href="/Blog">Blog</a></li>
-				<li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
-			</ol>
-		</nav>		
-		<h1>{{ .Title }}</h1>
-		<div class="metadata">
-			{{ with .Params.categories }}
-			<ul class="categories list-inline">
-				{{ range . }}
-				<li class="list-inline-item"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-				{{ end }}
-			</ul>
-			{{ end }}
-			/ By 			
-			{{ with .Params.authors }}
-			<ul class="authors list-inline">
-				{{ range . }}
-				<li class="list-inline-item"><a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-				{{ end }}
-			</ul>
-			{{ end }} 
-			/ <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "January 02, 2006" }}</time>
-		</div>
 		<div class="row">
-			<div class="col-md-9">
-				{{ .Content }}
-				{{ with .Params.tags }}
-				<div>
-					<ul id="tags">
-						{{ range . }}
-						<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-						{{ end }}
-					</ul>
-				</div>
+			<div class="col mx-3 my-3">
+				{{ if .Params.BigHeader }}
+					{{ partial "big_header.html" . }}
+				{{ else }}
+				<h1>{{ .Title }}</h1>
 				{{ end }}
-			</div>
-			<div class="d-none d-md-block col-md-3">		
-				{{ partial "sidebar.html" . }}
-			</div>
+				{{ if not .Params.hidetoc }}
+				{{ partial "toc.html" . }}
+				{{ end }}
+				{{ .Content | partial "fix-tables" }}
+			</div>	
 		</div>
 	</article>
 {{ end }}

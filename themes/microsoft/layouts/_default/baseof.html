@@ -2,16 +2,36 @@
 <html lang="{{ .Site.LanguageCode | default "en-us" }}" dir="ltr">
   <head>
     <meta charset="utf-8">
+    {{ if .NextInSection }}
+    <link rel="next" href="{{ .NextInSection.RelPermalink }}">{{ end }}
+    {{ if .PrevInSection }}
+    <link rel="prev" href="{{ .PrevInSection.RelPermalink }}">{{ end }}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>{{ .Title }}</title>
-    <!-- MWF stylesheet (required) -->
+    <meta name="author"
+        content="{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ range .Site.Author }}{{ . }} {{ end }}{{ end }}">
+    <meta name="description"
+        content="{{ if .IsHome }}{{ .Site.Params.homeSubtitle }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}{{ end }}" />
+    <meta name="keywords" content="{{ .Site.Params.keywords }}" />
+    {{ if or (eq .Type "tags") (eq .Type "blog")}}<meta name="robots" content="noindex" />{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}" />
+    {{ block "title" . }}
+    <title>
+        {{ if .IsHome }}
+        {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }} {{ end }}
+        {{ else }}
+        {{ .Title }}{{ with $.Params.SectionTitle }}{{if ne $.Params.SectionTitle $.Title}} | {{ . }}{{ end }}{{ end }} | {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }}{{ end }}
+        {{ end }}
+    </title>
+    {{ end }}
+        <!-- MWF stylesheet (required) -->
 	<link rel="stylesheet" href="{{ "mwf/css/main.css" | relURL }}">
 
     <!-- MWF polyfills (required) -->
     <script src="{{ "mwf/js/polyfills.min.js" | relURL }}"></script>
 
 	{{ partial "uhf_css.html" . }}
+  <script src="{{ "/js/jquery-3.6.0.slim.min.js" | relURL }}"></script>
 	{{ partial "uhf_javascript.html" . }}
 
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}

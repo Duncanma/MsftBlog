@@ -1,10 +1,7 @@
 div#meControl {
-    display: none;
+    display: none !important;
 }
 
-div#mainContent img {
-    max-width: 100%;
-}
 
 div.metadata ul li {
     display: inline;

@@ -1,0 +1,26 @@
+    <!-- collapse controls -->
+    <div class="btn-group align-items-center my-3" role="group" data-mount="collapse-controls" data-target="#faqList">
+        <!-- expand all button -->
+        <button type="button" class="btn btn-link" data-action="expand" aria-pressed="false" aria-disabled="false">Expand all</button>
+        <span> | </span>
+        <!-- collapse all button -->
+        <button type="button" class="btn btn-link" data-action="collapse" aria-pressed="false" aria-disabled="false">Collapse all</button>
+    </div>
+    <!-- accordion wrapper -->
+    <ul class="accordion mx-3 my-3 pl-0 accordion-backplate" id="faqList">
+        {{ $selectedQuestions := index site.Data.faq (.Get 0) }}
+        {{ range $elem_index, $elem_val := $selectedQuestions }}
+        <li>
+            <h4 class="accordion-header">
+                <button class="btn btn-collapse" data-mount="collapse" data-target="#{{ anchorize .question }}" aria-expanded="false" aria-controls="{{ anchorize .question }}">
+                    {{ .question }}
+                </button>
+                <div class="collapse" id="{{ anchorize .question }}" >
+                    <div class="accordion-body base">
+                        {{ .answer | markdownify }}
+                    </div>
+                </div>                
+            </h4>
+        </li>
+        {{ end }}
+    </ul>

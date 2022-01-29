@@ -1,15 +1,114 @@
 {{ define "main" }}
-<h1>Microsoft Security Response Center Blog</h1>
-<div class="row">
-	<div class="col-md-9">
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "eq" "posts") }}
-		{{ range $paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</div>
-	<div class="d-none d-md-block col-md-3">		
-	{{ partial "sidebar.html" . }}
-	</div>
-</div>
+<section>
+    <div class="card d-block mx-ng mx-md-0">
+        <div class="row no-gutters material-surface">
+            <div class="d-flex col-md">
+                <div class="card-body align-self-center p-4 p-md-5">
+                    <h1 class=" ">Microsoft Security Response&nbsp;Center</h1>
+                    <div class="mb-3">
+                        <p>The Microsoft Security Response Center is part of the defender community and on the front line of security response evolution. For over twenty years, we have been engaged with security researchers working to protect customers and the broader ecosystem.</p>
+                    </div>
+					<div class="link-group">
+						<a href="#" class="cta">Our Mission</a>
+						<a href="#" class="cta">MSRC Blog</a>
+					</div>
+				</div>
+            </div>
+            <div class="col-md-6">
+                <picture>
+                    <source srcset="/img/hp_800x450_vp5.jpg" media="(min-width: 1400px)">
+                    <source srcset="/img/hp_630x449_vp4.jpg" media="(min-width: 1084px)">
+                    <source srcset="/img/hp_561x421_vp3.jpg" media="(min-width: 860px)">
+                    <source srcset="/img/hp_859x557_vp2.jpg" media="(min-width: 540px)">
+                    <img src="/img/hp_539x349_vp1.jpg" class="card-img img-object-cover" alt="The Microsoft Cyberdefence Operation Center (CDOC)">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+	<ul class="row row-cols-1 row-cols-sm-1 row-cols-lg-3 row-cols-xl-3 list-unstyled mx-4 my-4">
+		<li class="col">
+			<!-- Card -->
+			<div class="card h-100 mb-3 px-3">
+				<div class="card-body pt-g pt-3">
+				  <h3 class=" ">BlueHat is Back!</h3>
+				  <p>Announcing BlueHat IL - a special edition of Microsoft’s leading cybersecurity conference, to be held for the 5th time in <strong>Tel Aviv, Israel</strong>.</p><p>Over the last decade, BlueHat conferences have drawn the brightest minds in security to examine the industry’s key challenges. Now BlueHat IL is taking it to the next level.</p>
+				</div>
+				<div class="card-footer pb-3 mb-3">
+					<a href="#" class="cta">Conference Information</a>
+				</div>
+			</div>
+		</li>
+		<li class="col">
+			<!-- Card -->
+			<div class="card h-100 mb-3 px-3">
+			  <div class="card-body pt-g pt-3">
+				  <h3 class=" ">Security Update Guide</h3>
+				  <p>MSRC investigates all reports of security vulnerabilities affecting Microsoft products and services, and provides the information in this guide as part of the ongoing effort to help you manage security risks and help keep your systems protected.</p>
+			  </div>
+			  <div class="card-footer pb-3 mb-3">
+				<a href="#" class="cta">View the Guide</a>
+			</div>
+			</div>
+		</li>
+		<li class="col">
+			<!-- Card -->
+			<div class="card h-100 mb-3 px-3">
+			  <div class="card-body pt-g pt-3">
+				  <h3 class=" ">Bounty Programs</h3>
+				  <p>If you are a security researcher that has found a vulnerability in a Microsoft product, service, or device we want to hear from you. If your vulnerability report affects a product or service that is within scope of one of our bounty programs, you may receive a bounty award according to the program descriptions.</p>
+			  </div>
+			  <div class="card-footer pb-3 mb-3">
+				<a href="#" class="cta">Learn More</a>
+			</div>
+			</div>
+		</li>
+	</ul>	
+</section>
+
+<section class="material-surface">
+	<ul class="row row-cols-1 row-cols-sm-1 row-cols-lg-3 row-cols-xl-3 list-unstyled mx-4 my-4 ">
+		<!-- Card column wrapper -->
+		<li class="col">
+			<!-- Card -->
+			<div class="card h-100 my-3 px-3">
+			   	<div class="card-body pt-g pt-3">
+				  <h3 class=" ">Security vulnerabilities</h3>
+				  <p>If you believe you have found a security vulnerability that meets <a href="https://www.microsoft.com/msrc/definition-of-a-security-vulnerability">Microsoft's definition of a security vulnerability</a>, please submit the report to MSRC </p>
+			   	</div>
+				<div class="card-footer pb-3 mb-3">
+					<a href="#" class="cta">Report a vulnerability</a>
+				</div>
+			</div>
+		</li>
+		<li class="col">
+			<!-- Card -->
+			<div class="card h-100 my-3 px-3">
+			  <div class="card-body pt-g pt-3">
+				  <h3 class=" ">Abuse Reports</h3>
+				  <p>Please submit a report if you have experienced abuse or a privacy issue originating from a Microsoft-hosted site or service. </p>
+			  </div>
+			  <div class="card-footer pb-3 mb-3">
+				<a href="#" class="cta">Report Abuse</a>
+			</div>
+		</div>
+		</li>
+		<li class="col">
+			<!-- Card -->
+			<div class="card h-100 my-3 px-3">
+			  <div class="card-body pt-g pt-3">
+				  <h3 class=" ">Infringements</h3>
+				  <p>Submit a report of copyright or trademark infringement to Microsoft.</p>
+			  </div>
+			  <div class="card-footer pb-3 mb-3">
+				<a href="#" class="cta">Report Infringement</a>
+			</div>
+		</div>
+		</li>
+	</ul>	
+</section>
+
+
 {{ end }}

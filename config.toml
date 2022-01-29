@@ -2,7 +2,7 @@
 #TODO: Japanese content?
 baseURL = "https://msrc-blog.microsoft.com/"
 languageCode = "en-us"
-title = "Microsoft Security Response Center Blog"
+title = "Microsoft Security Response Center"
 DefaultContentLanguage = "en"
 
 theme = "microsoft"
@@ -36,13 +36,10 @@ disableHugoGeneratorInject = false
 [author]
   name = "MSRC"
 
-[blackfriday]
-  hrefTargetBlank = false
-
 [taxonomies]
   tag = "tags"
-  categories = "categories"
-  authors = "authors"
+  category = "categories"
+  author = "authors"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -51,14 +48,8 @@ disableHugoGeneratorInject = false
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Get the latest information from Microsoft's Security Response Center"
+  description = "The Microsoft Security Response Center is part of the defender community and on the front line of security response evolution. For over twenty years, we have been engaged with security researchers working to protect customers and the broader ecosystem."
 
-  homeSubtitle = "Get the latest information from Microsoft's Security Response Center"
-
-  clarity = "440rce59ji"
-
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/DuncanmaMSFT/Blog/commit/"
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -121,6 +112,31 @@ weight = 10
 pattern = "2006"
 
 [markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
     [markup.goldmark.renderer]
-      unsafe = true
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+
+[permalinks]
+  Blog = '/:year/:month/:day/:title/'
+  categories = "/blog/categories/:slug/"
+  tags = "/blog/tags/:slug/"

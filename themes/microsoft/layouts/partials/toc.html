@@ -1,0 +1,8 @@
+{{ if .TableOfContents }}
+<p class="">
+  <button class="btn btn-collapse" data-mount="collapse" data-target="#toc" aria-expanded="false" aria-controls="toc">In this article</button>
+</p>
+<div class="collapse" id="toc">
+  {{ .TableOfContents }}
+</div>
+{{ end }}

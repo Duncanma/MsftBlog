@@ -1,0 +1,69 @@
+exploitability:
+  - question: What is the Microsoft Exploitability Index?
+    answer: The Microsoft Exploitability Index provides additional information to help customers prioritize their deployment of the monthly security updates. Microsoft designed this index to provide customers guidance concerning the likelihood of exploitation, based on each vulnerability addressed by Microsoft security updates.
+  - question: Why did Microsoft create the Exploitability Index?
+    answer: Customers asked for more information to help them prioritize their deployment of Microsoft security updates each month, specifically requesting details about the likelihood of exploitation for the vulnerabilities addressed in security updates. The Exploitability Index provides guidance about the actual risk of exploitation of a vulnerability at the time of the security update’s release.
+  - question: How are vulnerabilities rated?
+    answer: >
+      Microsoft Exploitability Index focuses on two aspects of a vulnerability to build its ratings:
+
+      - Current exploitation trends, based on telemetry data and awareness of exploitation of a particular type of vulnerability in a particular product,
+
+      - The cost and reliability of building a working exploit for the vulnerability, based on a technical analysis of the vulnerability
+      
+  - question: "Is this a truly reliable rating system?"
+    answer: While reliably predicting activity within the security ecosystem is always difficult, 
+      there are three reasons why this system should be useful.
+
+
+      First, over the last few years we have realized that many security researchers analyze the updates 
+      associated with Microsoft's security updates the day they are released to create and evaluate protections. 
+      In doing so, many of these researchers also create exploit code to test them. The methodology used to 
+      develop this exploit code is like the one Microsoft uses to determine the likelihood of exploit code release. 
+      Microsoft analyzes the updates themselves, the nature of the vulnerability, and the conditions that must 
+      be met for an exploit to execute successfully.
+      
+
+      Second, not all vulnerabilities resolved by our security updates are exploited. 
+      A vulnerability may well be technically exploitable with a high degree of reliability, but it may 
+      never be exploited. We continuously monitor and track exploitation activity to keep up to date with 
+      current trends. This in turn informs our opinion of what constitutes a more attractive vulnerability over 
+      similar vulnerabilities, and enables us to more accurately communicate an actual risk, rather than a 
+      potential one from the vulnerabilities we patch.
+
+
+      Finally, we are also partnering with protection providers through the 
+      [Microsoft Active Protections Program](https://microsoft.com/msrc/mapp) (MAPP), working with them to help validate our predictions 
+      each month – thereby using a community approach to ensure better accuracy through information sharing.
+
+  - question: How is the Exploitability Index different from the Security Update Severity Rating system? 
+    answer: The Security Update Severity Rating System assumes that exploitation will be successful. 
+      For some vulnerabilities where exploitability is high, this assumption is very likely to be true 
+      for a broad set of attackers. For other vulnerabilities where exploitability is low, this 
+      assumption may only be true when a dedicated attacker puts a lot of resources into ensuring their 
+      attack is successful. Regardless of the Severity or Exploitability Index rating, Microsoft always 
+      recommends that customers deploy all applicable and available updates; however, this rating information 
+      can assist sophisticated customers in prioritizing their approach to each month's release.
+  - question: How are Denial of Service, Tampering, Information Disclosure, or Spoofing issues rated?
+    answer: The Exploitability Index does not differentiate between vulnerability types. It focuses on the likelihood 
+      of exploitation of each vulnerability within the range of their full impact potential. Thus, any vulnerability, 
+      whether it is Remote Code Execution, Tampering or other, could be rated any of the Exploitability Index ratings.
+  - question: What happens when newly emerging information requires an update to the Exploitability Index rating? 
+    answer: The ability to rate the possible exploitation of vulnerabilities is an evolving science, and new techniques 
+      for exploitation in general, or unique techniques specific to a vulnerability, or new trends in detected exploits 
+      of particular products may be discovered that could change the Exploitability Index rating. 
+      However, the goal of the Exploitability Index is to help customers prioritize those updates for the most current 
+      monthly release. Therefore, if there is information that would change an assessment released in the first month 
+      of a security release, Microsoft will update the Exploitability Index. If information becomes available in 
+      subsequent months, after most customers have made their prioritization decisions, the Exploitability Index will 
+      not be updated as it is no longer useful to the customer. When an Exploitability Index rating is corrected in a 
+      way that reflects increased risk to customers, the security update revision is incremented at a major version number 
+      (for instance, from 1.0 to 2.0). When risk is adjusted downwards, the update revision is incremented at a minor 
+      version number (for instance, from 1.0 to 1.1).
+  - question: How does the Exploitability Index relate to the Common Vulnerability Scoring System (CVSS) and other rating systems? 
+    answer: The Exploitability Index is separate and not related to other rating systems. However, the MSRC is a 
+      contributing member to the Common Vulnerability Scoring System (CVSS), and Microsoft shares its experience and 
+      customer feedback in building and releasing the Exploitability Index with the working group in order to help 
+      ensure the CVSS is effective and actionable. 
+                    
+
