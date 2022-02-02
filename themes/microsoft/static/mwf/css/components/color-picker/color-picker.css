@@ -1,12 +1,13 @@
 @charset "UTF-8";
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
 .color-picker {
   padding: 0 7px 1.25em;
-  position: relative; }
+  position: relative;
+  /* stylelint-disable-next-line selector-class-pattern */ }
   .color-picker input {
     position: absolute;
     z-index: -1;
@@ -21,9 +22,7 @@
     border: 2px solid currentColor;
     margin-right: 0.83rem;
     margin-bottom: 0.25rem;
-    transition: -webkit-transform 0.15s;
     transition: transform 0.15s;
-    transition: transform 0.15s, -webkit-transform 0.15s;
     will-change: transform;
     position: relative;
     cursor: pointer; }
@@ -33,8 +32,7 @@
       height: 100%; }
   .color-picker input:checked + label .color-picker-dot,
   .color-picker .color-picker-dot:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
     border-color: transparent; }
     .color-picker input:checked + label .color-picker-dot::before,
     .color-picker .color-picker-dot:hover::before {

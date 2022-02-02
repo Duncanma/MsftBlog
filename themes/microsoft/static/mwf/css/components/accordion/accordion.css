@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
@@ -429,18 +429,14 @@ fieldset:disabled a.btn {
     font-family: "MWF-MORAY-MDL2";
     content: "";
     font-size: 0.8125em;
-    transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
     @media (prefers-reduced-motion: reduce) {
       .btn-collapse::before {
         transition: none; } }
   html:not([dir="rtl"]) .btn-collapse[aria-expanded="false"]::before {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
+    transform: rotate(-90deg); }
   html[dir="rtl"] .btn-collapse[aria-expanded="false"]::before {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    transform: rotate(90deg); }
   html:not([dir="rtl"]) .btn-collapse {
     padding-left: calc(0.75rem + 1.25em); }
   html[dir="rtl"] .btn-collapse {

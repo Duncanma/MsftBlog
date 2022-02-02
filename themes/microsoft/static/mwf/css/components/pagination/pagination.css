@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
@@ -34,9 +34,7 @@
       position: absolute;
       top: 50%;
       margin-top: -0.5em;
-      transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+      transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
       @media (prefers-reduced-motion: reduce) {
         .page-item:first-child .page-link::before, .page-item:first-child .page-link::after, .page-item:last-child .page-link::before, .page-item:last-child .page-link::after {
           transition: none; } }
@@ -53,11 +51,9 @@
     content: "";
     right: 0; }
   html:not([dir="rtl"]) .page-item:first-child .page-link:hover::before {
-    -webkit-transform: translate(-0.25em, 0);
-            transform: translate(-0.25em, 0); }
+    transform: translate(-0.25em, 0); }
   html[dir="rtl"] .page-item:first-child .page-link:hover::before {
-    -webkit-transform: translate(0.25em, 0);
-            transform: translate(0.25em, 0); }
+    transform: translate(0.25em, 0); }
   html:not([dir="rtl"]) .page-item:last-child .page-link {
     padding-right: 1.25em; }
   html[dir="rtl"] .page-item:last-child .page-link {
@@ -69,11 +65,9 @@
     content: "";
     left: 0; }
   html:not([dir="rtl"]) .page-item:last-child .page-link:hover::after {
-    -webkit-transform: translate(0.25em, 0);
-            transform: translate(0.25em, 0); }
+    transform: translate(0.25em, 0); }
   html[dir="rtl"] .page-item:last-child .page-link:hover::after {
-    -webkit-transform: translate(-0.25em, 0);
-            transform: translate(-0.25em, 0); }
+    transform: translate(-0.25em, 0); }
   .page-item.active {
     display: inline-block;
     position: relative; }

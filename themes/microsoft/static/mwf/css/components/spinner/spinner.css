@@ -1,5 +1,5 @@
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
@@ -11,8 +11,7 @@
 
 .spinner .spinner-dot {
   position: absolute;
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+  transform: rotate(225deg);
   -webkit-animation: orbit 5.5s infinite;
           animation: orbit 5.5s infinite;
   width: 1.6625rem;
@@ -72,84 +71,68 @@
 
 @-webkit-keyframes orbit {
   0% {
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg);
+    transform: rotate(225deg);
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out; }
   7% {
-    -webkit-transform: rotate(345deg);
-            transform: rotate(345deg);
+    transform: rotate(345deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
   30% {
-    -webkit-transform: rotate(455deg);
-            transform: rotate(455deg);
+    transform: rotate(455deg);
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out; }
   39% {
-    -webkit-transform: rotate(690deg);
-            transform: rotate(690deg);
+    transform: rotate(690deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
   70% {
-    -webkit-transform: rotate(815deg);
-            transform: rotate(815deg);
+    transform: rotate(815deg);
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out; }
   75% {
-    -webkit-transform: rotate(945deg);
-            transform: rotate(945deg);
+    transform: rotate(945deg);
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out; }
   76% {
-    -webkit-transform: rotate(945deg);
-            transform: rotate(945deg);
+    transform: rotate(945deg);
     opacity: 0; }
   100% {
-    -webkit-transform: rotate(945deg);
-            transform: rotate(945deg);
+    transform: rotate(945deg);
     opacity: 0; } }
 
 @keyframes orbit {
   0% {
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg);
+    transform: rotate(225deg);
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out; }
   7% {
-    -webkit-transform: rotate(345deg);
-            transform: rotate(345deg);
+    transform: rotate(345deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
   30% {
-    -webkit-transform: rotate(455deg);
-            transform: rotate(455deg);
+    transform: rotate(455deg);
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out; }
   39% {
-    -webkit-transform: rotate(690deg);
-            transform: rotate(690deg);
+    transform: rotate(690deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
   70% {
-    -webkit-transform: rotate(815deg);
-            transform: rotate(815deg);
+    transform: rotate(815deg);
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out; }
   75% {
-    -webkit-transform: rotate(945deg);
-            transform: rotate(945deg);
+    transform: rotate(945deg);
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out; }
   76% {
-    -webkit-transform: rotate(945deg);
-            transform: rotate(945deg);
+    transform: rotate(945deg);
     opacity: 0; }
   100% {
-    -webkit-transform: rotate(945deg);
-            transform: rotate(945deg);
+    transform: rotate(945deg);
     opacity: 0; } }

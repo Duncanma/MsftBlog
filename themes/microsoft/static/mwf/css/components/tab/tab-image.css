@@ -1,5 +1,5 @@
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
@@ -49,8 +49,7 @@
   .tab-image .tab-image-img {
     border-radius: 0.3125rem; }
   .tab-image:not(.active) .tab-image-img {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%); }
+    filter: grayscale(100%); }
   .tab-image .tab-image-border {
     border: 0.1875rem solid transparent;
     border-radius: 0.625rem;

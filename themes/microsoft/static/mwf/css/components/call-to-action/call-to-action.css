@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
@@ -20,9 +20,7 @@
     top: 50%;
     margin-top: -0.5em;
     font-size: 0.8125em;
-    transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
     @media (prefers-reduced-motion: reduce) {
       .cta::after {
         transition: none; } }
@@ -35,8 +33,6 @@
   .cta:hover {
     text-decoration: underline; }
     html:not([dir="rtl"]) .cta:hover::after {
-      -webkit-transform: translate(0.25em, 0);
-              transform: translate(0.25em, 0); }
+      transform: translate(0.25em, 0); }
     html[dir="rtl"] .cta:hover::after {
-      -webkit-transform: translate(-0.25em, 0);
-              transform: translate(-0.25em, 0); }
+      transform: translate(-0.25em, 0); }

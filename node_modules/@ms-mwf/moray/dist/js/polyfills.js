@@ -1,7 +1,7 @@
 (function (factory) {
   typeof define === 'function' && define.amd ? define(factory) :
   factory();
-}((function () { 'use strict';
+})((function () { 'use strict';
 
   /*!
   Copyright (C) 2013-2015 by Andrea Giammarchi - @WebReflection
@@ -3956,4 +3956,4 @@
   // required to activate smoothscroll polyfill
   smoothscroll.polyfill();
 
-})));
+}));

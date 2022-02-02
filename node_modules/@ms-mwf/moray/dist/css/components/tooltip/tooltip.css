@@ -1,5 +1,5 @@
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   display: none;
-  z-index: 1060;
+  z-index: 1010;
   max-width: 261px;
   font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -76,8 +76,7 @@
     height: 1rem;
     background-color: transparent;
     direction: ltr;
-    -webkit-transform-origin: center;
-            transform-origin: center; }
+    transform-origin: center; }
     .tooltip .arrow::after {
       display: block;
       content: "";
@@ -93,16 +92,14 @@
     width: 100%; }
   .tooltip.flyout-top .arrow {
     top: calc(100% - 0.4375rem);
-    -webkit-transform: rotate(-135deg);
-            transform: rotate(-135deg); }
+    transform: rotate(-135deg); }
   .tooltip.flyout-top .arrow-wrapper {
     top: 100%; }
     .tooltip.flyout-top .arrow-wrapper .arrow {
       top: -0.4375rem; }
   .tooltip.flyout-bottom .arrow {
     bottom: calc(100% - 0.4375rem);
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
+    transform: rotate(45deg); }
   .tooltip.flyout-bottom .arrow-wrapper {
     bottom: 100%; }
     .tooltip.flyout-bottom .arrow-wrapper .arrow {
@@ -115,16 +112,14 @@
     bottom: 0; }
   .tooltip.flyout-right .arrow {
     right: calc(100% - 0.4375rem);
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
+    transform: rotate(-45deg); }
   .tooltip.flyout-right .arrow-wrapper {
     right: 100%; }
     .tooltip.flyout-right .arrow-wrapper .arrow {
       right: -0.4375rem; }
   .tooltip.flyout-left .arrow {
     left: calc(100% - 0.4375rem);
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg); }
+    transform: rotate(135deg); }
   .tooltip.flyout-left .arrow-wrapper {
     left: 100%; }
     .tooltip.flyout-left .arrow-wrapper .arrow {

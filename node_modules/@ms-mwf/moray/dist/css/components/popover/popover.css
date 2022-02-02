@@ -1,5 +1,5 @@
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
@@ -9,7 +9,7 @@
 .popover {
   position: absolute;
   top: 0;
-  z-index: 1060;
+  z-index: 1010;
   max-width: 336px;
   font-size: 1rem;
   word-wrap: break-word;
@@ -61,8 +61,7 @@
     height: 1rem;
     background-color: #505050;
     direction: ltr;
-    -webkit-transform-origin: center;
-            transform-origin: center; }
+    transform-origin: center; }
     .popover .arrow::after {
       display: block;
       content: "";
@@ -86,20 +85,16 @@
       left: 0; }
   .popover.flyout-top .arrow {
     bottom: -0.5625rem;
-    -webkit-transform: rotate(-135deg);
-            transform: rotate(-135deg); }
+    transform: rotate(-135deg); }
   .popover.flyout-bottom .arrow {
     top: -0.5625rem;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
+    transform: rotate(45deg); }
   .popover.flyout-right .arrow {
     left: -0.5625rem;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
+    transform: rotate(-45deg); }
   .popover.flyout-left .arrow {
     right: -0.5625rem;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg); }
+    transform: rotate(135deg); }
 
 .popover-content {
   overflow: auto; }

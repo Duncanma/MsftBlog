@@ -1,5 +1,5 @@
 /*!
- * MWF (Moray) v1.9.2
+ * MWF (Moray) v1.10.0
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Copyright 2011-2020 The Bootstrap Authors and Twitter, Inc.
  */
@@ -29,9 +29,6 @@
   .form-control:focus {
     outline: 0.1875rem dotted currentColor;
     outline-offset: -0.375rem; }
-  .form-control::-webkit-input-placeholder {
-    color: inherit;
-    opacity: 0.5; }
   .form-control::-moz-placeholder {
     color: inherit;
     opacity: 0.5; }
@@ -44,8 +41,6 @@
   .form-control::placeholder {
     color: inherit;
     opacity: 0.5; }
-    .theme-dark .form-control::-webkit-input-placeholder {
-      color: #fff; }
     .theme-dark .form-control::-moz-placeholder {
       color: #fff; }
     .theme-dark .form-control:-ms-input-placeholder {
