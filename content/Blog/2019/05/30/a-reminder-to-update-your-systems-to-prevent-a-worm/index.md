@@ -9,7 +9,6 @@ authors:
 - msrc
 categories:
 - MSRC
-hero: ../../../defaultHero.jpg
 ---
 On May 14, Microsoft released fixes for a critical Remote Code Execution vulnerability, [CVE-2019-0708](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0708), in Remote Desktop Services – formerly known as Terminal Services – that affects some older versions of Windows. In our [previous blog post](https://blogs.technet.microsoft.com/msrc/2019/05/14/prevent-a-worm-by-updating-remote-desktop-services-cve-2019-0708/) on this topic we warned that the vulnerability is ‘wormable’, and that future malware that exploits this vulnerability could propagate from vulnerable computer to vulnerable computer in a similar way as the WannaCry malware spread across the globe in 2017.
 

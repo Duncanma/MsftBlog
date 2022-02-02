@@ -9,7 +9,6 @@ authors:
 - christa
 categories:
 - MSRC
-hero: ../../../defaultHero.jpg
 ---
 The Microsoft Security Response Center (MSRC) works with partners all over the world to protect Microsoft customers. This week we’re headed to the Philippines to meet security researchers and bounty hunters at [**ROOTCON 13!**](https://www.rootcon.org/home)
 

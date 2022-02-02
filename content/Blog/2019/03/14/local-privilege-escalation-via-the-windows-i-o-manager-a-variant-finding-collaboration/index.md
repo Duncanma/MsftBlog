@@ -9,7 +9,7 @@ authors:
 - swiat
 categories:
 - Security Research & Defense
-hero: ./img/wp-content-uploads-2019-03-5275-1.png
+hero: /blog/2019/03/14/local-privilege-escalation-via-the-windows-i-o-manager-a-variant-finding-collaboration/img/wp-content-uploads-2019-03-5275-1.png
 ---
 The Microsoft Security Response Center (MSRC) investigates all reports of security vulnerabilities affecting Microsoft products and services to help make our customers and the global online community more secure. We appreciate the excellent vulnerability research reported to us regularly from the security community, and we consider it a privilege to work with these researchers.
 

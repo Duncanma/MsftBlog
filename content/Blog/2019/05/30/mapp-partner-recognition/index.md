@@ -9,7 +9,6 @@ authors:
 - msrc
 categories:
 - MSRC
-hero: ../../../defaultHero.jpg
 ---
 There are many dedicated people and organizations who contribute to the protection and security of our common customers. For years, Microsoft has recognized security researchers for helping protect the ecosystem. Now, we’re announcing the launch of a new program to better recognize and thank Microsoft Active Protections Program (MAPP) partners for all they do to protect our customers, including awards and evangelism based on their contributions.
 

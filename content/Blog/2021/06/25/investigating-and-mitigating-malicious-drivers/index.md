@@ -9,112 +9,41 @@ authors:
 - simon.pope
 categories:
 - MSRC
-hero: ../../../defaultHero.jpg
 ---
-<!-- wp:paragraph -->
-
 The security landscape continues to [rapidly evolve](https://blogs.microsoft.com/on-the-issues/2020/12/13/customers-protect-nation-state-cyberattacks/) as threat actors find [new](https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/) and innovative methods to gain access to environments across a wide range of vectors. As the industry moves closer to the adoption of a Zero Trust security posture with broad and layered defenses, we remain committed to sharing threat intelligence with the community to shine a light on the latest techniques and exploits of attackers so the industry can better protect itself.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 Microsoft is investigating a malicious actor distributing malicious drivers within gaming environments. The actor submitted drivers for certification through the Windows Hardware Compatibility Program. The drivers were built by a third party. We have suspended the account and reviewed their submissions for additional signs of malware.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-
 ## No Evidence of Certificate Exposure
-
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 
 We have seen no evidence that the WHCP signing certificate was exposed. The infrastructure was not compromised. In alignment with our Zero Trust and layered defenses security posture, we have built-in detection and blocking of this driver and associated files through Microsoft Defender for Endpoint. We are also sharing these detections with other AV security vendors so they can proactively deploy detections.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 The actor’s activity is limited to the gaming sector specifically in China and does not appear to target enterprise environments. We are not attributing this to a nation-state actor at this time. The actor’s goal is to use the driver to spoof their geo-location to cheat the system and play from anywhere. The malware enables them to gain an advantage in games and possibly exploit other players by compromising their accounts through common tools like keyloggers.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 It’s important to understand that the techniques used in this attack occur **post exploitation, **meaning an attacker must either have already gained administrative privileges in order to be able to run the installer to update the registry and install the malicious driver the next time the system boots or convince the user to do it on their behalf.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 We will be sharing an update on how we are refining our partner access policies, validation and the signing process to further enhance our protections. There are no actions customers should take other than follow security best practices and deploy Antivirus software such as Windows Defender for Endpoint.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 Just like our defenders, our adversaries are creative and determined. Because of this, Microsoft approaches security with an assume breach mentality and layered defenses. We work tirelessly alongside our industry partners to ensure the community as a whole is aware of new attack tools, tactics and procedures that we have observed or that have been reported through responsible disclosure. By sharing the information we’ve learned with this report, we are raising awareness of these techniques so that more protections can be built in across the industry and to increase the degree of difficulty for attackers.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-
 ## Additional Information on the Windows Hardware Compatibility Program
-
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 
 Microsoft Defender and Windows Security teams work diligently with driver publishers to detect security vulnerabilities before they can be exploited by malicious software. [Microsoft Defender for Endpoint’s UEFI scanner](https://www.microsoft.com/security/blog/2020/06/17/uefi-scanner-brings-microsoft-defender-atp-protection-to-a-new-level/) is able to scan below the operating system where these attacks occur to add further detection and protection from these kinds of low-level attacks. We also build automated mechanisms through Windows Update to block vulnerable versions of drivers and protect customers against vulnerability exploits based on ecosystem and partner engagement as this is an issue that challenges the industry at large.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 Our security teams continue to work closely with the OEM and driver publishers to analyze and patch any known vulnerabilities and to update affected devices prior to shipment. Once the driver publisher patches the vulnerability, an update to all affected drivers is pushed out via the Windows Update (WU) platform. Once affected devices receive the latest security patches, drivers with confirmed security vulnerabilities are blocked on Windows 10 devices using Microsoft Defender for Endpoint Attack Surface Reduction (ASR) and Microsoft Windows Defender Application Control (WDAC) technologies to protect devices against exploits. More information is available via our [Microsoft recommended driver block rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules) document.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
 
 ## Indicators of compromise
 
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-
 In addition to [creating antimalware signatures](https://www.microsoft.com/en-us/wdsi/threats/threat-search?query=Retliften) for Microsoft Defender antivirus, sharing key detection guidance with our AV partners, we are also sharing these hashes and IP addresses for other defenders to leverage.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-
 ## Known C2 IP addresses
-
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 
 110.42.4\[.]180  
 45.113.202\[.]180
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-
 ## Known malicious files
 
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-
 These are the list of SHA256 file hashes known to Microsoft as malicious:
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 04a269dd0a03e32e5b2a1c8ab0768791962e040d080d44dc44dab01dd7954f2b  
 0856a1da15b2b3e8999bf9fc51bbdedd4051e21fab1302e2ce766180b4931d86  
@@ -190,9 +119,3 @@ ee6d0d0ea24be622521ee1a4defa5d5729b99ee2217ac65701d38d05dbc0d4e6
 f1718a005232d1261894b798a60c73d971416359b70d0e545d7e7a40ed742b71  
 f83c357106a7d1d055b5cb75c8414aa3219354deb16ae9ee7efe8ee4c8c670ca  
 fd8a5313bf63f5013dc126620276fb4f0ef26416db48ee88cbaaca4029df1d73
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
-<!-- /wp:paragraph -->

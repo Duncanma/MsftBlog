@@ -13,7 +13,7 @@ tags:
 - #bugbounty
 - #MSFTCyberSec
 - #MSFTsecresponse
-hero: ./img/wp-content-uploads-2019-04-MSRC-Graphic.png
+hero: /blog/2019/04/02/microsoft-bounty-program-updates-faster-bounty-review-faster-payments-and-higher-rewards/img/wp-content-uploads-2019-04-MSRC-Graphic.png
 ---
 [![](./img/wp-content-uploads-2019-04-MSRC-Graphic.png)](./img/wp-content-uploads-2019-04-MSRC-Graphic.png)
 

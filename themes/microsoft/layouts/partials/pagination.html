@@ -19,11 +19,17 @@
 
 {{- if in $validFormats $format }}
   {{- if gt $page.Paginator.TotalPages 1 }}
-  	<nav aria-label="Pagination for blog posts: {{ $page.Paginator.TotalPages }} pages">
-    	<ul class="pagination pagination-segment-end">
-      		{{- partial (printf "partials/inline/pagination/%s" $format) $page }}
-	    </ul>
-	</nav>
+  <div class="row">
+    <div class="col d-none d-sm-block"></div>
+    <div class="col">
+      <nav aria-label="Pagination for blog posts: {{ $page.Paginator.TotalPages }} pages ">
+        <ul class="pagination pagination-segment-end">
+            {{- partial (printf "partials/inline/pagination/%s" $format) $page }}
+        </ul>
+      </nav>
+    </div>
+    <div class="col d-none d-sm-block"></div>
+  </div>
 
   {{- end }}
 {{- else }}

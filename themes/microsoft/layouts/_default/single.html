@@ -4,7 +4,7 @@
 			<div class="col mx-3 my-3">
 				{{ if .Params.BigHeader }}
 					{{ partial "big_header.html" . }}
-				{{ else }}
+				{{ else if not .Params.skiph1 }}
 				<h1>{{ .Title }}</h1>
 				{{ end }}
 				{{ if not .Params.hidetoc }}

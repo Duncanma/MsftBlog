@@ -1,6 +1,6 @@
 #TODO: Year and month pages
 #TODO: Japanese content?
-baseURL = "https://msrc-blog.microsoft.com/"
+baseURL = "https://duncanmasandbox.z13.web.core.windows.net/"
 languageCode = "en-us"
 title = "Microsoft Security Response Center"
 DefaultContentLanguage = "en"
@@ -133,7 +133,7 @@ pattern = "2006"
         title = true
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xhtml = false
 
 [permalinks]

@@ -12,7 +12,6 @@ categories:
 tags:
 - #bugbounty
 - #MSFTCyberSec
-hero: ../../../defaultHero.jpg
 ---
 This year at the [Nullcon International Security Conference](https://nullcon.net/website) I shared practical advice for how security researchers can maximize the impact of their security vulnerability submissions and earn higher bounty awards under the [Microsoft Bounty Program](https://www.microsoft.com/en-us/msrc/bounty?rtc=1). For those who couldn’t be there, I had two core pieces of advice.
 

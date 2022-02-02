@@ -1,0 +1,25 @@
+{{ $img := .Get 2 }}
+{{ $h1 := .Get 0 }}
+{{ $subtitle := .Get 1 }}
+{{ $alt := .Get 3 }}
+{{ $width := .Get 4 }}
+{{ $height := .Get 5 }}
+<div class="card-img-overlay my-3">
+    <div class="card-background d-none d-lg-block ">
+        <picture>
+            <img src="{{ $img }}" class="card-img" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}">
+        </picture>
+    </div>
+    <div class="card-foreground my-5 px-g px-0 d-flex">
+        <div class="w-100 w-lg-col-5 mx-lg-5">
+            <div class="card material-card  py-5 px-5">
+                <div class="card-body ">
+                    <h1 class=" ">{{ $h1 }}</h1>
+                    <div class="mb-4">
+                        <p>{{ $subtitle | markdownify }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

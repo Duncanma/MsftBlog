@@ -14,7 +14,6 @@ tags:
 - #LocoMocoSec
 - #MSFTCyberSec
 - #MSFTsecresponse
-hero: ../../../defaultHero.jpg
 ---
 The MSRC is more than managing vulnerability reports, publishing Microsoft security updates, and defending the cloud. The MSRC is passionate about helping everyone improve internal engineering practices and supporting the defender community, and are excited to partner with Blackberry to host a Product Security Operations Forum at [LocoMocoSec](https://locomocosec.com/) on April 18, 2019.
 

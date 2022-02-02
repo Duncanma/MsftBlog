@@ -2,7 +2,7 @@
     <h2 ><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <p>{{ .Summary }}</p>
 	<!-- 		<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time> -->
-		{{ range .Params.tags }}
+		{{ range .Params.tags }} <!-- TODO: tag URL is wrong -->
 		<a class="glyph-prepend glyph-prepend-tag btn btn-sm btn-outline-primary" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 		{{ end }}
 </div>

@@ -7,8 +7,8 @@
 				<li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
 			</ol>
 		</nav>		
-		<h1>{{ .Title }}</h1>
-		<div class="metadata">
+		<h1 class="mb-1">{{ .Title }}</h1>
+		<div class="metadata mb-3">
 			{{ with .Params.categories }}
 			<ul class="categories list-inline">
 				{{ range . }}

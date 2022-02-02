@@ -22,27 +22,12 @@ tags:
 - malware research
 - Open Source
 - Xbox
-hero: ../../../defaultHero.jpg
 ---
-<!-- wp:paragraph -->
-
 Were you unable to attend BlueHat Seattle, or wanted to see a session again? We have good news. If you have been waiting for the videos from BlueHat Seattle last month, the wait is over. All videos which the presenter authorized to be recorded are now online and available to anyone. We are also happy to announce that we have the videos of the Security Graph day-long workshop available.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 The [playlist](https://www.youtube.com/playlist?list=PLXkmvDo4MfutkDE6HQ_6ekh16lBiLHkWO) for BlueHat Seattle 2019 is available on the MSRC YouTube channel. For a list of what is included, see the following tables.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 **October 23: Six Degrees of Mallory: Graph for Security workshop sessions**
-
-<!-- /wp:paragraph -->
-
-<!-- wp:table -->
 
 |                                                     |                                    |
 | --------------------------------------------------- | ---------------------------------- |
@@ -57,15 +42,7 @@ The [playlist](https://www.youtube.com/playlist?list=PLXkmvDo4MfutkDE6HQ_6ekh16l
 | Finding your blast radius and your peers            | Sridhar Periyasamy (Microsoft)     |
 | Graphs in security                                  | Ian Hellen (Microsoft)             |
 
-<!-- /wp:table -->
-
-<!-- wp:paragraph -->
-
 **October 24: BlueHat sessions Day 1**
-
-<!-- /wp:paragraph -->
-
-<!-- wp:table -->
 
 |                                                                                              |                                                    |
 | -------------------------------------------------------------------------------------------- | -------------------------------------------------- |
@@ -79,15 +56,7 @@ The [playlist](https://www.youtube.com/playlist?list=PLXkmvDo4MfutkDE6HQ_6ekh16l
 | Open Source Security: vulnerabilities never come alone                                       | Nico Waisman (GitHub)                              |
 | Building secure machine learning pipelines : Security patterns and challenges                | Anamitra Dutta Majumdar & Anubhav Saini (LinkedIn) |
 
-<!-- /wp:table -->
-
-<!-- wp:paragraph -->
-
 **October 25: BlueHat Sessions Day 2**
-
-<!-- /wp:paragraph -->
-
-<!-- wp:table -->
 
 |                                               |                                          |
 | --------------------------------------------- | ---------------------------------------- |
@@ -98,10 +67,4 @@ The [playlist](https://www.youtube.com/playlist?list=PLXkmvDo4MfutkDE6HQ_6ekh16l
 | Modern Binary Analysis with ILs               | Jordan Wiens & Peter LaFosse (Vector 35) |
 | Closing Remarks                               | Kymberlee Price (Microsoft)              |
 
-<!-- /wp:table -->
-
-<!-- wp:paragraph -->
-
 Enjoy the videos! If you would like to be part of this lineup for BlueHat IL in February 2020, be sure to check out their CFP at <https://www.bluehatil.com/>.
-
-<!-- /wp:paragraph -->

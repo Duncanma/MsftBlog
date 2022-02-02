@@ -14,7 +14,6 @@ tags:
 - #cybersecurity
 - #MSCloud
 - #MSFTCyberSec
-hero: ../../../defaultHero.jpg
 ---
 The Microsoft Security Response Center (MSRC) [recently announced](https://blogs.technet.microsoft.com/bluehat/2019/02/14/bluehat-shanghai-cfp/) our first BlueHat security conference in Shanghai which will take place on **May 29-30, 2019**. After 15 years of BlueHat events in Redmond, Washington and Israel, we are thrilled to expand to a new location. We work with many talented security researchers throughout the Asia Pacific region to protect our shared online ecosystem, and we can’t wait to connect with them in person at BlueHat!
 

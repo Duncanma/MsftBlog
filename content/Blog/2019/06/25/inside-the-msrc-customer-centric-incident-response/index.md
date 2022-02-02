@@ -16,7 +16,7 @@ tags:
 - Microsoft Active Protections Program (MAPP)
 - Security Development Lifecycle (SDL)
 - SSIRP
-hero: ./img/wp-content-uploads-2019-06-SSIRP-Strategy-and-Tactics.png
+hero: /blog/2019/06/25/inside-the-msrc-customer-centric-incident-response/img/wp-content-uploads-2019-06-SSIRP-Strategy-and-Tactics.png
 ---
 The [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/en-us/msrc) is an integral part of Microsoft’s Cyber Defense Operations Center (CDOC) that brings together security response experts from across the company to help protect, detect, and respond to threats in real-time. Staffed with dedicated teams 24x7, the CDOC has direct access to thousands of security professionals, data scientists, and product engineers throughout Microsoft to ensure rapid response and resolution to security threats. This series of blog posts looks at an important slice of Microsoft’s security response, namely how MSRC responds to elevated threats to customers through our Software and Services Incident Response Plan (SSIRP). Over the coming week, we’ll discuss the anatomy of a SSIRP incident and give some recommendations for building your own security response process. Before discussing our incident response plan, this blog will show how we work to avoid these incidents from happening.
 

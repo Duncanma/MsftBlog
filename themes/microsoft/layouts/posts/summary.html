@@ -1,0 +1,27 @@
+<div class="card mx-3 my-3" data-mount="click-group">
+	<div class="row ">
+		<!-- picture if there is one? -->
+		<div class="col-3 d-none d-sm-block d-print-none">
+			<picture>
+				{{ if .Params.hero }}
+				<img src="{{ .Params.hero }}" class="card-img mt-2" alt="" width="200px">
+				{{ else }}
+					{{ if in .Params.tags "Security Update Guide" }}
+					<img src="/cat_images/sug.jpg" class="card-img mt-2" alt="" width="200px">
+					{{ else }} <!-- default category image -->
+					<img src="/android-chrome-256x256.png" class="card-img mt-2" width="200px">
+					{{ end }}
+				{{ end }}
+			</picture>
+		</div>
+		<div class="col">
+			<div class="card-body mb-3">
+				<h2 >{{ .Title }}</h2>
+				<p>{{ .Summary }}</p>
+				<div class="link-group">
+					<a href="{{ .Permalink }}" class="cta" aria-label="Read {{ .Title }}">Read More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

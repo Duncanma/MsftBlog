@@ -9,7 +9,7 @@ authors:
 - sylvliu
 categories:
 - BlueHat
-hero: ./img/wp-content-uploads-2019-02-BHlogo-1024x154.png
+hero: /blog/2019/02/14/bluehat-shanghai-cfp/img/wp-content-uploads-2019-02-BHlogo-1024x154.png
 ---
 [![](./img/wp-content-uploads-2019-02-BHlogo-1024x154.png)](/wp-content/uploads/2019/02/BHlogo.png)We know security experts with diverse skills and experiences are found around the world. This year, the BlueHat Security Conference is coming to Shanghai!
 

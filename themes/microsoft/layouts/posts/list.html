@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>Microsoft Security Response Center Blog</h1>
+<div class="row">
+	<div class="col-xs-12 col-md-9">
+		{{ $blogPosts := where .Site.RegularPages "Type" "posts" }}
+		{{ $nonJapanese := where .Site.RegularPages "Params.lang" "en" }}
+		{{ $intersect := $blogPosts | intersect $nonJapanese }}
+		{{ $paginator := .Paginate $intersect }}
+		{{ range $paginator.Pages }}
+			{{ .Render "summary" }}
+		{{ end }}
+	</div>
+	<div class="d-none d-md-block col-md-3">		
+	{{ partial "sidebar.html" . }}
+	</div>
+</div>
+{{ partial "pagination.html" . }}
+{{ end }}

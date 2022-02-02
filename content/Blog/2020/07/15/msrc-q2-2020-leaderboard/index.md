@@ -14,21 +14,11 @@ tags:
 - Coordinated Vulnerability Disclosure
 - Researcher Recognition
 - Security Researcher
-hero: ./img/wp-content-uploads-2020-07-leaderboard-0714-1-465x1024.png
+hero: /blog/2020/07/15/msrc-q2-2020-leaderboard/img/wp-content-uploads-2020-07-leaderboard-0714-1-465x1024.png
 ---
-<!-- wp:paragraph -->
-
 We are excited to announce the top contributing researchers for the 2020 Second Quarter (Q2)! Congratulations to all the researchers who continue to rock the leaderboard, and a big thank you to everyone for your contribution to securing our customers and the ecosystem.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 The top three researchers of the 2020 Second Quarter (Q2) Security Researcher Leaderboard are: Zhiniang Peng (2695 points), Yuki Chen (1960 points), and Suresh C (1650 points)
-
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"align":"center","id":11977,"width":598,"height":1315,"sizeSlug":"large"} -->
 
 ![RANK,NAME,POINTS
 1,ZHINIANG PENG (@EDWARDZPENG),2695
@@ -64,29 +54,11 @@ The top three researchers of the 2020 Second Quarter (Q2) Security Researcher Le
 29,RON MASAS,200
 32,PHAM VAN KHANH (@RSKVP93),190](./img/wp-content-uploads-2020-07-leaderboard-0714-1-465x1024.png)
 
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-
 Each quarterly leaderboard recognizes the top five percent of security researchers, based on their total points. This Q2 2020 leaderboard reflects point values for cases that are:
-
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
 
 - Submitted and assessed by the MSRC team between April 1, 2020 and June 30, 2020
 - Submitted between January 1, 2020 and March 31, 2020 ([last program period](https://msrc-blog.microsoft.com/2020/04/23/msrc-q1-2020-leaderboard/)), but assessed after April 1, 2020
 
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-
 Keep up the great work! We look forward to seeing you in the next leaderboard!
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 _Sylvie Liu, Security Program Manager, Microsoft Security Response Center_
-
-<!-- /wp:paragraph -->

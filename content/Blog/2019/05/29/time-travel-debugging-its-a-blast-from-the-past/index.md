@@ -9,7 +9,7 @@ authors:
 - swiat
 categories:
 - Security Research & Defense
-hero: ./img/wp-content-uploads-2019-05-xttd-img1.png
+hero: /blog/2019/05/29/time-travel-debugging-its-a-blast-from-the-past/img/wp-content-uploads-2019-05-xttd-img1.png
 ---
 The Microsoft Security Response Center (MSRC) works to assess vulnerabilities that are externally reported to us as quickly as possible, but time can be lost if we have to confirm details of the repro steps or environment with the researcher to reproduce the vulnerability. Microsoft has made our “Time Travel Debugging” (TTD) tool [publicly available](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/time-travel-debugging-overview) to make it easy for security researchers to provide full repro, shortening investigations and potentially contributing to higher bounties (see “[Report quality definitions for Microsoft’s Bug Bounty programs](https://www.microsoft.com/en-us/msrc/bounty-example-report-submission)”). We use it internally, too—it has allowed us to find root cause for complex software issues in half the time it would take with a regular debugger.
 

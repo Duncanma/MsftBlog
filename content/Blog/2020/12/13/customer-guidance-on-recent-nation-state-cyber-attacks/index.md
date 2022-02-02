@@ -9,175 +9,65 @@ authors:
 - msrc
 categories:
 - MSRC
-hero: ./img/wp-content-uploads-2020-12-image-2.png
+hero: /blog/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/img/wp-content-uploads-2020-12-image-2.png
 ---
-<!-- wp:paragraph -->
-
 _Note: we are updating as the investigation continues. Revision history listed at the bottom._
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 This post contains technical details about the methods of the actor we believe was involved in [Recent Nation-State Cyber Attacks](https://blogs.microsoft.com/on-the-issues/2020/12/13/customers-protect-nation-state-cyberattacks/), with the goal to enable the broader security community to hunt for activity in their networks and contribute to a shared defense against this sophisticated threat actor. **Please see the Microsoft Product Protections and Resources section for additional investigative updates, guidance, and released protections.**
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 As we wrote in that blog, while these elements aren’t present in every attack, this is a summary of techniques that are part of the toolkit of this actor.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
 
 - An intrusion through malicious code in the SolarWinds Orion product. This results in the attacker gaining a foothold in the network, which the attacker can use to gain elevated credentials. Microsoft Defender now has detections for these files. Also, see [SolarWinds Security Advisory](https://www.solarwinds.com/securityadvisory).
 - Once in the network, the intruder then uses the administrative permissions acquired through the on-premises compromise to gain access to the organization’s global administrator account and/or trusted SAML token signing certificate. This enables the actor to forge SAML tokens that impersonate any of the organization’s existing users and accounts, including highly privileged accounts.
 - Anomalous logins using the SAML tokens created by the compromised token signing certificate can then be made against any on-premises resources (regardless of identity system or vendor) as well as to any cloud environment (regardless of vendor) because they have been configured to trust the certificate. Because the SAML tokens are signed with their own trusted certificate, the anomalies might be missed by the organization.
 - Using the global administrator account and/or the trusted certificate to impersonate highly privileged accounts, the actor may add their own credentials to existing applications or service principals, enabling them to call APIs with the permission assigned to that application.
 
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-
 Due to the critical nature of this activity, Microsoft is sharing the following information to help detect, protect, and respond to this threat.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
 
 ## Activity Description
 
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3} -->
-
 ### Initial Access
-
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 
 Although we do not know how the backdoor code made it into the library, from the recent campaigns, research indicates that the attackers might have compromised internal build or distribution systems of SolarWinds, embedding backdoor code into a legitimate SolarWinds library with the file name `SolarWinds.Orion.Core.BusinessLayer.dll`. This backdoor can be distributed via automatic update platforms or systems in target networks. Microsoft security researchers currently have limited information about how the attackers compromised these platforms.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-
 ### Execution
-
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 
 While updating the SolarWinds application, the embedded backdoor code loads before the legitimate code executes. Organizations are misled into believing that no malicious activity has occurred and that the program or application dependent on the libraries is behaving as expected.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 The attackers have compromised signed libraries that used the target companies’ own digital certificates, attempting to evade application control technologies. Microsoft already removed these certificates from its trusted list. The certificate details with the signer hash are shown below:
-
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":12471,"width":382,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
 
 ![](./img/wp-content-uploads-2020-12-image-2.png)
 
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-
 The DLL then loads from the installation folder of the SolarWinds application. Afterwards, the main implant installs as a Windows service and as a DLL file in the following path using afolder with different names:
-
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
 
 - SolarWinds Orion installation folder, for example, _`%PROGRAMFILES%\SolarWinds\Orion\SolarWinds.Orion.Core.BusinessLayer.dll`_
 - The .NET Assembly cache folder (when compiled) _`%WINDIR%\System32\config\systemprofile\AppData\Local\assembly\tmp\<VARIES>\SolarWinds.Orion.Core.BusinessLayer.dll`_
 
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-
 Microsoft security researchers observed malicious code from the attacker activated only when running under `SolarWinds.BusinessLayerHost.exe` process context for the DLL samples currently analyzed.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
 
 ### Command-and-control (C2)
 
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-
 The malicious DLL calls out to a remote network infrastructure using the domains _avsvmcloud.com_. to prepare possible second-stage payloads, move laterally in the organization, and compromise or exfiltrate data.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 Microsoft detects the main implant and its other components as Solorigate.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-
 ### Actions on Objectives
-
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 
 In actions observed at the Microsoft cloud, attackers have either gained administrative access using compromised privileged account credentials (e.g. stolen passwords) or by forging SAML tokens using compromised SAML token signing certificates.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 In cases where we see SAML token signing certificate compromise, there are cases where the specific mechanism by which the actor gains access to the certificate has not been determined. In the cases we have determined that the SAML token signing certificate was compromised, common tools were used to access the database that supports the SAML federation server using administrative access and remote execution capabilities.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 In other cases, service account credentials had been granted administrative privileges; and in others, administrative accounts may have been compromised by unrelated mechanisms. Typically, the certificate is stored on the server that provides the SAML federation capabilities; this makes it accessible to anyone with administrative rights on that server, either from storage or by reading memory.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 Once the certificate has been acquired, the actor can forge SAML tokens with whatever claims and lifetime they choose, then sign it with the certificate that has been acquired. By doing this, they can access any resources configured to trust tokens signed with that SAML token signing certificate. This includes forging a token which claims to represent a highly privileged account in Azure AD.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 
 As with on premises accounts, the actor may also gain administrative Azure AD privileges with compromised credentials. This is particularly likely if the account in question is not protected by multi-factor authentication.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 Regardless of whether the actor minted SAML tokens or gained access to Azure AD through other means, specific malicious activities have been observed using these administrative privileges to include long term access and data access as described below.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
 
 ### Long Term Access
 
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-
 Having gained a significant foothold in the on premises environment, the actor has made modifications to Azure Active Directory settings to facilitate long term access.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:list {"ordered":true,"type":"1"} -->
 
 1. Federation Trusts
 
@@ -188,33 +78,13 @@ Having gained a significant foothold in the on premises environment, the actor h
    - The actor has been observed adding credentials (x509 keys or password credentials) to one or more legitimate OAuth Applications or Service Principals, usually with existing _Mail.Read_ or \_Mail.ReadWrite \_permissions, which grants the ability to read mail content from Exchange Online via Microsoft Graph or Outlook REST. Examples include mail archiving applications. Permissions are usually, but not always, AppOnly.
    - The actor may use their administrator privileges to grant additional permissions to the target Application or Service Principal (e.g. _Mail.Read_, _Mail.ReadWrite_).
 
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
-
 ### Data Access
-
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 
 Data access has relied on leveraging minted SAML tokens to access user files/email or impersonating the Applications or Service Principals by authenticating and obtaining Access Tokens using credentials that were added in 2a. Above. The actor periodically connects from a server at a VPS provider to access specific users’ emails using the permissions granted to the impersonated Application or Service Principal. In many cases, the targeted users are key IT and security personnel. By impersonating existing applications that use permissions like _Mail.Read_ to call the same APIs leveraged by the actor, the access is hidden amongst normal traffic. For this reason, if you suspect you are impacted you should assume your communications are accessible to the actor.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-
 ## Recommended Defenses
 
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-
 If your organization has not been attacked or compromised by this actor, Microsoft recommends you consider the following actions to protect against the techniques described above as part of your overall response. This is not an exhaustive list, and Microsoft may choose to update this list as new mitigations are determined:
-
-<!-- /wp:paragraph -->
-
-<!-- wp:list {"ordered":true,"type":"1"} -->
 
 1. Run up to date antivirus or EDR products that detect compromised SolarWinds libraries and potentially anomalous process behaviour by these binaries. Consider disabling SolarWinds in your environment entirely until you are confident that you have a trustworthy build free of injected code. For more details consult [SolarWinds’ Security Advisory](https://www.solarwinds.com/securityadvisory).
 2. Block known C2 endpoints listed below in IOCs using your network infrastructure.
@@ -224,15 +94,7 @@ If your organization has not been attacked or compromised by this actor, Microso
 6. Reduce surface area by removing/disabling unused or unnecessary applications and service principals. Reduce permissions on active applications and service principals, especially application (AppOnly) permissions.
 7. See [Secure your Azure AD identity infrastructure](https://docs.microsoft.com/azure/security/fundamentals/steps-secure-identity) for more recommendations.
 
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
-
 ### Microsoft Product Protections and Resources
-
-<!-- /wp:heading -->
-
-<!-- wp:list -->
 
 - [December 21st - Solorigate Resource Center](https://msrc-blog.microsoft.com/2020/12/21/december-21st-2020-solorigate-resource-center/)
 - [Advice for incident responders on recovery from systemic identity compromises](https://aka.ms/dartrecoveryguide)
@@ -246,47 +108,19 @@ If your organization has not been attacked or compromised by this actor, Microso
 - [Unified Audit Log (UAL) detection and hunting](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide)
 - [A moment of reckoning: the need for a strong and global cybersecurity response](https://blogs.microsoft.com/on-the-issues/2020/12/17/cyberattacks-cybersecurity-solarwinds-fireeye/)
 
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-
 If you believe your organization has been compromised, we recommend that you comprehensively audit your on premises and cloud infrastructure to include configuration, per-user and per-app settings, forwarding rules, and other changes the actor may have made to persist their access. In addition, we recommend comprehensively removing user and app access, reviewing configurations for each, and re-issuing new, strong credentials in accordance with documented industry best practices.
-
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
 
 ## Indicators of Compromise (IOCs)
 
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-
 The below list provides IOCs observed during this activity. We encourage our customers to implement detections and protections to identify possible prior campaigns or prevent future campaigns against their systems. This list is not exhaustive and may expand as investigations continue. We also recommend you review the IOCs provided by FireEye at [Highly Evasive Attacker Leverages SolarWinds Supply Chain to Compromise Multiple Global Victims With SUNBURST Backdoor | FireEye Inc](https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html).
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":4} -->
-
 #### Command and Control
-
-<!-- /wp:heading -->
-
-<!-- wp:table {"className":"is-style-stripes"} -->
 
 |                   |                          |
 | ----------------- | ------------------------ |
 | avsvmcloud\[.]com | Command and Control (C2) |
 
-<!-- /wp:table -->
-
-<!-- wp:heading {"level":4} -->
-
 #### Observed malicious instances of SolarWinds.Orion.Core.BusinessLayer.dll
-
-<!-- /wp:heading -->
-
-<!-- wp:table {"className":"is-style-stripes"} -->
 
 |                                                                  |                   |                 |
 | ---------------------------------------------------------------- | ----------------- | --------------- |
@@ -311,25 +145,9 @@ The below list provides IOCs observed during this activity. We encourage our cus
 | a25cadd48d70f6ea0c4a241d99c5241269e6faccb4054e62d16784640f8e53bc | 2019.4.5200.8890  | October 2019    |
 | d3c6785e18fba3749fb785bc313cf8346182f532c59172b69adfb31b96a5d0af | 2019.4.5200.8890  | October 2019    |
 
-<!-- /wp:table -->
-
-<!-- wp:paragraph -->
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
 **_Analyst's comment:_** These indicators should not be considered exhaustive for this observed activity. Moreover, aside from the malicious DLLs, Microsoft researchers have observed two files in October 2019 with code anomalies when a class was added to the SolarWinds DLL. Note however that these two do not have active malicious code or methods.
 
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-
 ## Revision history
-
-<!-- /wp:heading -->
-
-<!-- wp:list -->
 
 - 2020-12-21: Added link to the Solorigate Resource Center
 - 2020-12-21: Added link to DART blog
@@ -337,9 +155,3 @@ The below list provides IOCs observed during this activity. We encourage our cus
 - 2020-12-17: Added link to Azure Sentinel blog post, added more observed malicious instances
 - 2020-12-16: Updated links to Azure Sentinel detections
 - 2020-12-13: Published
-
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-
-<!-- /wp:paragraph -->

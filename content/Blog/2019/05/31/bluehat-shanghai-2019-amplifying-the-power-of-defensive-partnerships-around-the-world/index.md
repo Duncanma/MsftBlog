@@ -9,7 +9,7 @@ authors:
 - sylvliu
 categories:
 - MSRC
-hero: ./img/wp-content-uploads-2019-05-MSRC-BlueHat.jpg
+hero: /blog/2019/05/31/bluehat-shanghai-2019-amplifying-the-power-of-defensive-partnerships-around-the-world/img/wp-content-uploads-2019-05-MSRC-BlueHat.jpg
 ---
 Earlier this week [BlueHat Shanghai](https://www.microsoft.com/china/bluehatshanghai/2019/#HOME) brought together security researchers and hundreds of cybersecurity professionals from China and across Asia to explore the latest topics in cybersecurity research. Including presentations from Qihoo 360, Baidu, Alibaba and the Chinese Academy of Sciences, BlueHat Shanghai highlighted incredibly talented Chinese researchers and focused on cutting edge topics including container and IoT security.
 

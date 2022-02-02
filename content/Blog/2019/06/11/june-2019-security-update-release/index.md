@@ -9,7 +9,6 @@ authors:
 - msrc
 categories:
 - MSRC
-hero: ../../../defaultHero.jpg
 ---
 Today, we released security updates to provide additional protections against malicious attackers. As a best practice, we encourage customers to [turn on automatic updates](https://support.microsoft.com/en-us/help/306525/how-to-configure-and-use-automatic-updates-in-windows).
 
