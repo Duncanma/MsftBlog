@@ -12,7 +12,7 @@ categories:
 - MSRC
 hero: /blog/2021/12/14/researcher-spotlight-dr-nestori-syynimaas-constant-mission-protecting-identities/img/wp-content-uploads-2021-12-Nestori-Space-Gandalf-Red-Cloak-4-724x1024.jpg
 ---
-_"When you find the things I find, they really matter. They affect everybody’s security.”_
+> "When you find the things I find, they really matter. They affect everybody’s security.”
 
 ![](./img/wp-content-uploads-2021-12-Nestori-Space-Gandalf-Red-Cloak-4-724x1024.jpg)
 

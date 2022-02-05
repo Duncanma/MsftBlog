@@ -10,3 +10,7 @@ div.metadata ul li {
 div.metadata ul {
     display: inline;
 }
+
+.img-max-300 {
+    max-width: 300px;
+}

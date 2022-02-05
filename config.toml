@@ -1,12 +1,13 @@
 #TODO: Year and month pages
 #TODO: Japanese content?
+#TODO: Authors
 baseURL = "https://duncanmasandbox.z13.web.core.windows.net/"
 languageCode = "en-us"
 title = "Microsoft Security Response Center"
 DefaultContentLanguage = "en"
 
 theme = "microsoft"
-summaryLength = 10
+summaryLength = 50
 pygmentsCodefences = true
 pygmentsUseClasses = true
 rssLimit  = 10  # Maximum number of items in the RSS feed.
@@ -129,7 +130,7 @@ pattern = "2006"
       autoHeadingID = true
       autoHeadingIDType = 'github'
       [markup.goldmark.parser.attribute]
-        block = false
+        block = true
         title = true
     [markup.goldmark.renderer]
       hardWraps = false

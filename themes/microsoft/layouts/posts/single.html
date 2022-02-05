@@ -16,30 +16,34 @@
 				{{ end }}
 			</ul>
 			{{ end }}
-			/ By 			
-			{{ with .Params.authors }}
-			<ul class="authors list-inline">
-				{{ range . }}
-				<li class="list-inline-item"><a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-				{{ end }}
-			</ul>
-			{{ end }} 
+			{{ partial "authors.html" . }}
 			/ <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "January 02, 2006" }}</time>
 		</div>
 		<div class="row">
 			<div class="col-md-9">
-				{{ .Content | partial "fix-tables" }}
+				{{ .Content | partial "fix-tables" | partial "fix-blockquotes" }}
 				{{ with .Params.tags }}
 				<div>
-					<ul id="tags">
+					<ul id="tags" class="list-inline">
 						{{ range . }}
-						<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+						<li class="list-inline-item mb-1 mr-0"><a class="btn btn-primary btn-sm glyph-prepend glyph-prepend-xsmall glyph-prepend-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
 						{{ end }}
 					</ul>
 				</div>
 				{{ end }}
+				
+				<hr />
+				<div class="d-flex my-3">
+                    {{ if .PrevInSection }}
+					<div class="glyph-prepend glyph-prepend-chevron-left glyph-prepend-small"><a href="{{ .PrevInSection.Permalink }}" title="Link to previous blog post">Previous Post</a></div>
+					{{ end }}
+                    {{ if .NextInSection }}
+					<div class="ml-auto glyph-append glyph-append-chevron-right glyph-append-small"><a href="{{ .NextInSection.Permalink }}" title="Link to next blog post">Next Post</a></div>
+					{{ end }}
+				</div>
+
 			</div>
-			<div class="d-none d-md-block col-md-3">		
+			<div class="d-none d-md-block col-md-3">
 				{{ partial "toc.html" . }}
 				{{ partial "sidebar.html" . }}
 			</div>

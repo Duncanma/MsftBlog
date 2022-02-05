@@ -1,0 +1,23 @@
+{{- if .Params.authorDisplayName -}}
+/ By&nbsp;{{ .Params.authorDisplayName }}
+{{- else if .Params.authors -}}
+{{- $authorLength := len .Params.authors -}}
+{{- if gt $authorLength 1 -}}
+{{- with .Params.authors -}}
+/ By&nbsp; 
+<ul class="authors list-inline">
+    {{- range . -}}
+    {{- $author := index site.Data.author . -}}
+    <li class="list-inline-item">{{ $author.displayName }}</a></li>
+    {{- end -}}
+</ul>
+{{- end -}} 
+{{- else -}}
+{{- $authorName := index .Params.authors 0 -}}
+{{- if ne $authorName "msrc" -}}
+/ By&nbsp; 
+{{- $author := index site.Data.author $authorName -}}
+{{ $author.displayName }}
+{{- end -}}
+{{- end -}}
+{{- end -}}
